@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Livres</h1>
+    <ul>
+      {% for l in livres %}
+        <li>
+          <strong>{{ l.name }}</strong><br>
+          Auteur: {{ l.auteur }}<br>
+          Date d'emprunt: {{ l.dateEmprunt }}<br>
+          Disponible: {% if l.disponible %}Oui{% else %}Non{% endif %}<br>
+          Emprunteur: {{ l.emprunteur }}
+        </li>
+      {% empty %}
+        <li>Aucun livre</li>
+      {% endfor %}
+    </ul>
+
+    <h1>DVDs</h1>
+    <ul>
+      {% for d in dvds %}
+        <li>
+          <strong>{{ d.name }}</strong><br>
+          Réalisateur: {{ d.realisateur }}<br>
+          Date d'emprunt: {{ d.dateEmprunt }}<br>
+          Disponible: {% if d.disponible %}Oui{% else %}Non{% endif %}<br>
+          Emprunteur: {{ d.emprunteur }}
+        </li>
+      {% empty %}
+        <li>Aucun DVD</li>
+      {% endfor %}
+    </ul>
+
+    <h1>CDs</h1>
+    <ul>
+      {% for c in cds %}
+        <li>
+          <strong>{{ c.name }}</strong><br>
+          Artiste: {{ c.artiste }}<br>
+          Date d'emprunt: {{ c.dateEmprunt }}<br>
+          Disponible: {% if c.disponible %}Oui{% else %}Non{% endif %}<br>
+          Emprunteur: {{ c.emprunteur }}
+        </li>
+      {% empty %}
+        <li>Aucun CD</li>
+      {% endfor %}
+    </ul>
+
+    <h1>Jeux de Plateau</h1>
+    <ul>
+      {% for j in jeux %}
+        <li>
+          <strong>{{ j.name }}</strong><br>
+          Créateur: {{ j.createur }}
+        </li>
+      {% empty %}
+        <li>Aucun jeu de plateau</li>
+      {% endfor %}
+    </ul>
+</body>
+</html>
