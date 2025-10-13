@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+    <a href="{% url 'login' %}">
+        <button>Login</button>
+    </a>
     <h1>Livres</h1>
     <ul>
       {% for l in livres %}
