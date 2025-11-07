@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Edit Media</title>
 </head>
 <body>
     <nav>
@@ -14,18 +14,20 @@
         </a>
     </nav>
 
-    <p>Ajouter un média !</p>
-    <form action="" method="post" novalidate>
+    <h1>Modifier {{ media_type|capfirst }}</h1>
+
+    {% if messages %}
+        <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Ajouter</button>
+        <button type="submit">Enregistrer</button>
     </form>
-    {% if messages %}
-    <ul>
-      {% for message in messages %}
-        <li>{{ message }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
 </body>
 </html>

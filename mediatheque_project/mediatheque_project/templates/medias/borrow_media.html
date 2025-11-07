@@ -1,0 +1,103 @@
+<form method="post">
+    {% csrf_token %}
+    <label for="borrower_search">Rechercher un emprunteur :</label>
+    <input type="text" id="borrower_search" placeholder="Nom de l'emprunteur">
+    <br>
+    <select id="borrower_select" name="borrower" size="5" style="width:300px;"></select>
+    <br>
+    {{ form.media_type.label_tag }} {{ form.media_type }}
+    <br>
+    <label for="media_search">Recherche média :</label>
+    <input type="text" id="media_search" placeholder="Titre ou Auteur/Créateur">
+    <br>
+    <select id="media_select" size="5" style="width:300px;"></select>
+
+    {{ form.media_id }}
+    <br>
+    <button type="submit">Emprunter</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Borrower search
+    function loadBorrowers(query='') {
+        $.ajax({
+            url: "{% url 'search_borrowers' %}",
+            data: { q: query },
+            success: function(data) {
+                $('#borrower_select').empty();
+                data.results.forEach(function(item) {
+                    $('#borrower_select').append(new Option(item.text, item.id));
+                });
+                // Select first by default if nothing selected
+                if ($('#borrower_select option').length > 0) {
+                    $('#borrower_select').val($('#borrower_select option:first').val());
+                    $('input[name="borrower"]').val($('#borrower_select').val());
+                }
+            }
+        });
+    }
+
+    // Load all borrowers initially
+    loadBorrowers();
+
+    // Update as user types
+    $('#borrower_search').on('input', function() {
+        loadBorrowers($(this).val());
+    });
+
+    // Update hidden input when selection changes
+    $('#borrower_select').on('change', function() {
+        $('input[name="borrower"]').val($(this).val());
+    });
+});
+</script>
+
+<script>
+    $(document).ready(function() {
+    function loadMedia(query='') {
+        const media_type = $('#media_type').val();
+        $.ajax({
+            url: "{% url 'search_media' %}",
+            data: { q: query, media_type: media_type },
+            success: function(data) {
+                $('#media_select').empty();
+                data.results.forEach(function(item) {
+                    $('#media_select').append(new Option(item.text, item.id));
+                });
+                if ($('#media_select option').length > 0) {
+                    $('#media_select').val($('#media_select option:first').val());
+                    $('input[name="media_id"]').val($('#media_select').val());
+                }
+            }
+        });
+    }
+
+    // Initial load of all media
+    loadMedia();
+
+    // Update on typing
+    $('#media_search').on('input', function() {
+        loadMedia($(this).val());
+    });
+
+    // Update hidden input on selection
+    $('#media_select').on('change', function() {
+        $('input[name="media_id"]').val($(this).val());
+    });
+
+    // Reload media when media type changes
+    $('#media_type').on('change', function() {
+        loadMedia();
+    });
+});
+</script>
+
+{% if messages %}
+    <ul>
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+{% endif %}
