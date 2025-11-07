@@ -5,7 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <p>This is your user page.</p>
+    {% if request.user.is_authenticated %}
+        <form method="post" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+
+        <nav>
+            <a href="{% url 'ajoutmedia' %}">
+                <button type="button">Ajouter un média</button>
+            </a>
+
+            <a href="{% url 'ajoutemprunteur' %}">
+                <button type="button">Ajouter un emprunteur</button>
+            </a>
+        </nav>
+    {% endif %}
+
+    {% include "medias/media_list.html" %}
+    {% include "borrowers/emprunteur_list.html" %}
 </body>
 </html>
