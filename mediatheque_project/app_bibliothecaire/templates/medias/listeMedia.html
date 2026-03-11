@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Liste des médias</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Nom</th>
+                <th>Auteur / Créateur</th>
+                <th>Disponibilité</th>
+                {% if request.user.is_authenticated %}
+                    <th>Emprunteur</th>
+                    <th>Date d'emprunt</th>
+                    <th>Date de retour</th>
+                    <th>Retard</th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for livre in livres %}
+            <tr>
+                {% if forloop.first %}
+                    <td rowspan="{{ livres_count }}">Livre</td>
+                {% endif %}
+                <td>{{ livre.nom }}</td>
+                <td>{{ livre.auteur }}</td>
+                <td class="{% if livre.disponible %}available{% else %}unavailable{% endif %}">
+                    {% if livre.disponible %}Yes{% else %}No{% endif %}
+                </td>
+
+                {% if request.user.is_authenticated %}
+                    {% if livre.empruntActuel %}
+                        <td>{{ livre.empruntActuel.emprunteur.nom }}</td>
+                        <td>{{ livre.empruntActuel.dateEmprunt|date:"d/m/Y" }}</td>
+                        <td>{{ livre.empruntActuel.dateRetour|date:"d/m/Y" }}</td>
+
+                        {% if livre.empruntActuel.is_overdue %}
+                            <td>En retard !</td>
+                        {% else %}
+                            <td></td>
+                        {% endif %}
+                    {% else %}
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    {% endif %}
+                    <td>
+                        <a href="{% url 'modifierMedia' 'livre' livre.id %}">Modifier</a> |
+                        <a href="{% url 'supprimerMedia' 'livre' livre.id %}" onclick="return confirm('Supprimer ce livre ?');">Supprimer</a>
+
+                        {% if livre.empruntActuel and not livre.empruntActuel.mediaRendu %}
+                            | <a href="{% url 'retourMedia' 'livre' livre.id %}" onclick="return confirm('Confirmer le retour de ce média ?');">Marquer comme disponible</a>
+                        {% endif %}
+                    </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+
+            {% for dvd in dvds %}
+            <tr>
+                {% if forloop.first %}
+                    <td rowspan="{{ dvds_count }}">DVD</td>
+                {% endif %}
+                <td>{{ dvd.nom }}</td>
+                <td>{{ dvd.realisateur }}</td>
+                <td class="{% if dvd.disponible %}available{% else %}unavailable{% endif %}">
+                    {% if dvd.disponible %}Yes{% else %}No{% endif %}
+                </td>
+
+                {% if request.user.is_authenticated %}
+                    {% if dvd.empruntActuel %}
+                        <td>{{ dvd.empruntActuel.emprunteur.nom }}</td>
+                        <td>{{ dvd.empruntActuel.dateEmprunt|date:"d/m/Y" }}</td>
+                        <td>{{ dvd.empruntActuel.dateRetour|date:"d/m/Y" }}</td>
+
+                        {% if dvd.empruntActuel.is_overdue %}
+                            <td>En retard !</td>
+                        {% else %}
+                            <td></td>
+                        {% endif %}
+                    {% else %}
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    {% endif %}
+                    <td>
+                        <a href="{% url 'modifierMedia' 'dvd' dvd.id %}">Modifier</a> |
+                        <a href="{% url 'supprimerMedia' 'dvd' dvd.id %}" onclick="return confirm('Supprimer ce DVD ?');">Supprimer</a>
+                    </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+
+            {% for cd in cds %}
+            <tr>
+                {% if forloop.first %}
+                    <td rowspan="{{ cds_count }}">CD</td>
+                {% endif %}
+                <td>{{ cd.nom }}</td>
+                <td>{{ cd.artiste }}</td>
+                <td class="{% if cd.disponible %}available{% else %}unavailable{% endif %}">
+                    {% if cd.disponible %}Yes{% else %}No{% endif %}
+                </td>
+
+                {% if request.user.is_authenticated %}
+                    {% if cd.empruntActuel %}
+                        <td>{{ cd.empruntActuel.emprunteur.nom }}</td>
+                        <td>{{ cd.empruntActuel.dateEmprunt|date:"d/m/Y" }}</td>
+                        <td>{{ cd.empruntActuel.dateRetour|date:"d/m/Y" }}</td>
+
+                        {% if cd.empruntActuel.is_overdue %}
+                            <td>En retard !</td>
+                        {% else %}
+                            <td></td>
+                        {% endif %}
+                    {% else %}
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    {% endif %}
+                    <td>
+                        <a href="{% url 'modifierMedia' 'cd' cd.id %}">Modifier</a> |
+                        <a href="{% url 'supprimerMedia' 'cd' cd.id %}" onclick="return confirm('Supprimer ce CD ?');">Supprimer</a>
+                    </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+
+            {% for jeu in jeux %}
+            <tr>
+                {% if forloop.first %}
+                    <td rowspan="{{ jeux_count }}">Jeu de Plateau</td>
+                {% endif %}
+                <td>{{ jeu.nom }}</td>
+                <td>{{ jeu.createur }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                {% if request.user.is_authenticated %}
+                <td>
+                    <a href="{% url 'modifierMedia' 'jeu' jeu.id %}">Modifier</a> |
+                    <a href="{% url 'supprimerMedia' 'jeu' jeu.id %}" onclick="return confirm('Supprimer ce jeu ?');">Supprimer</a>
+                </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

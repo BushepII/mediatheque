@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Liste des emprunteurs</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for emprunteur in emprunteurs %}
+                <tr>
+                    <td>{{ emprunteur.nom }}</td>
+                    <td>{{ emprunteur.prenom }}</td>
+                    <td>{{ emprunteur.email }}</td>
+
+                    <td>
+                        <a href="{% url 'modifierEmprunteur' emprunteur.id %}">Modifier</a> |
+                        <a href="{% url 'supprimerEmprunteur' emprunteur.id %}" onclick="return confirm('Supprimer cet emprunteur ?');">Supprimer</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

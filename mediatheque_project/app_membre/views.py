@@ -3,14 +3,14 @@ from app_bibliothecaire.models import Livre, Dvd, Cd, JeuDePlateau
 from django.contrib.auth import logout
 
 
-MEDIA_MODELS = {
+choixMedia = {
     'livre': Livre,
     'dvd': Dvd,
     'cd': Cd,
     'jeu': JeuDePlateau,
 }
 
-def menumembre(request):
+def menuMembre(request):
     if request.user.is_authenticated:
         logout(request)
 
@@ -24,10 +24,10 @@ def menumembre(request):
         "dvds": dvds,
         "cds": cds,
         "jeux": jeux,
-        "livres_count": len(livres),
-        "dvds_count": len(dvds),
-        "cds_count": len(cds),
-        "jeux_count": len(jeux)
+        "nombreLivre": len(livres),
+        "nombreDvd": len(dvds),
+        "nombreCd": len(cds),
+        "nombreJeu": len(jeux)
     }
 
-    return render(request, 'home_page.html', context)
+    return render(request, 'homePage.html', context)

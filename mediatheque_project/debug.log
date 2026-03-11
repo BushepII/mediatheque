@@ -1,0 +1,1039 @@
+INFO 2026-01-15 15:30:50,273 autoreload Watching for file changes with StatReloader
+DEBUG 2026-01-15 15:30:50,274 autoreload Waiting for apps ready_event.
+DEBUG 2026-01-15 15:30:50,279 autoreload Apps ready_event triggered. Sending autoreload_started signal.
+DEBUG 2026-01-15 15:30:50,282 autoreload Watching dir D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates with glob **/*.
+DEBUG 2026-01-15 15:30:50,282 autoreload Watching dir D:\Programmation\mediatheque\mediatheque_project\locale with glob **/*.mo.
+DEBUG 2026-01-15 15:30:50,282 autoreload Watching dir D:\Programmation\mediatheque\mediatheque_project\app_mediatheque\locale with glob **/*.mo.
+DEBUG 2026-01-15 15:30:50,283 autoreload Watching dir D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\locale with glob **/*.mo.
+DEBUG 2026-01-15 15:30:50,288 autoreload Watching dir D:\Programmation\mediatheque\mediatheque_project\app_membre\locale with glob **/*.mo.
+DEBUG 2026-01-15 15:30:50,301 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2026-01-15 15:30:50,302 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2026-01-15 15:30:50,339 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\tree.py first seen with mtime 1756806607.956855
+DEBUG 2026-01-15 15:30:50,339 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\signals.py first seen with mtime 1756806607.8813057
+DEBUG 2026-01-15 15:30:50,339 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_membre\urls.py first seen with mtime 1764253258.3916245
+DEBUG 2026-01-15 15:30:50,340 autoreload File C:\Python313\Lib\asyncio\tasks.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,340 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\__init__.py first seen with mtime 1756806607.8993194
+DEBUG 2026-01-15 15:30:50,340 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\loaders\base.py first seen with mtime 1756806607.9463503
+DEBUG 2026-01-15 15:30:50,340 autoreload File C:\Python313\Lib\logging\handlers.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,340 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\mixins.py first seen with mtime 1756806607.9188297
+DEBUG 2026-01-15 15:30:50,340 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\async_checks.py first seen with mtime 1756806607.883808
+DEBUG 2026-01-15 15:30:50,340 autoreload File C:\Python313\Lib\quopri.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,340 autoreload File C:\Python313\DLLs\_queue.pyd first seen with mtime 1755178418.0
+DEBUG 2026-01-15 15:30:50,340 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sites\__init__.py first seen with mtime 1756806607.8351085
+DEBUG 2026-01-15 15:30:50,340 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\management\__init__.py first seen with mtime 1756806607.8918107
+DEBUG 2026-01-15 15:30:50,340 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\decorators\csrf.py first seen with mtime 1756806607.960356
+DEBUG 2026-01-15 15:30:50,341 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\middleware\http.py first seen with mtime 1756806607.9413395
+DEBUG 2026-01-15 15:30:50,341 autoreload File C:\Python313\Lib\email\mime\multipart.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,341 autoreload File C:\Python313\Lib\calendar.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,341 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\middleware.py first seen with mtime 1756806607.4629538
+DEBUG 2026-01-15 15:30:50,341 autoreload File C:\Python313\Lib\zoneinfo\_tzpath.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,341 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\models.py first seen with mtime 1756806607.4629538
+DEBUG 2026-01-15 15:30:50,341 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\functional.py first seen with mtime 1756806607.9538522
+DEBUG 2026-01-15 15:30:50,341 autoreload File C:\Python313\DLLs\_ctypes.pyd first seen with mtime 1755178420.0
+DEBUG 2026-01-15 15:30:50,342 autoreload File C:\Python313\Lib\asyncio\format_helpers.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,342 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\templatetags\log.py first seen with mtime 1756806607.4159255
+DEBUG 2026-01-15 15:30:50,342 autoreload File C:\Python313\Lib\pathlib\_local.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,342 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\sql\query.py first seen with mtime 1756806607.9228294
+DEBUG 2026-01-15 15:30:50,342 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\exceptions.py first seen with mtime 1756806607.2980733
+DEBUG 2026-01-15 15:30:50,342 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\serializers\__init__.py first seen with mtime 1756806607.8978221
+DEBUG 2026-01-15 15:30:50,342 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\base\features.py first seen with mtime 1756806607.9013221
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\__init__.py first seen with mtime 1756806607.9583547
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\forms.py first seen with mtime 1762474667.138938
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\operations\special.py first seen with mtime 1756806607.9143295
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\backends\__init__.py first seen with mtime 1756806607.9448502
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\_os.py first seen with mtime 1756806607.95085
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\__init__.py first seen with mtime 1756806607.880806
+DEBUG 2026-01-15 15:30:50,343 autoreload File C:\Python313\Lib\re\_constants.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\query.py first seen with mtime 1756806607.9173295
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\__init__.py first seen with mtime 1756806607.8998191
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\generic\dates.py first seen with mtime 1756806607.9613566
+DEBUG 2026-01-15 15:30:50,343 autoreload File C:\Python313\Lib\_compression.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,343 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\utils.py first seen with mtime 1756806607.9003193
+DEBUG 2026-01-15 15:30:50,343 autoreload File C:\Python313\Lib\struct.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,343 autoreload File C:\Python313\Lib\opcode.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,344 autoreload File C:\Python313\Lib\asyncio\base_futures.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,344 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\filters\reindent.py first seen with mtime 1756806607.1557398
+DEBUG 2026-01-15 15:30:50,344 autoreload File C:\Python313\Lib\email\encoders.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,344 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\exceptions.py first seen with mtime 1756806607.943847
+DEBUG 2026-01-15 15:30:50,344 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\middleware\common.py first seen with mtime 1756806607.9408395
+DEBUG 2026-01-15 15:30:50,344 autoreload File C:\Python313\Lib\dis.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,344 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\urls\converters.py first seen with mtime 1756806607.9498503
+DEBUG 2026-01-15 15:30:50,344 autoreload File C:\Python313\Lib\nturl2path.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,344 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\http\__init__.py first seen with mtime 1756806607.9393396
+DEBUG 2026-01-15 15:30:50,345 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\decorators.py first seen with mtime 1756806607.2975707
+DEBUG 2026-01-15 15:30:50,345 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\paginator.py first seen with mtime 1756806607.8813057
+DEBUG 2026-01-15 15:30:50,345 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\migration.py first seen with mtime 1756806607.9123244
+DEBUG 2026-01-15 15:30:50,345 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\functions\datetime.py first seen with mtime 1756806607.9208293
+DEBUG 2026-01-15 15:30:50,345 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\sql\where.py first seen with mtime 1756806607.9228294
+DEBUG 2026-01-15 15:30:50,345 autoreload File C:\Python313\Lib\asyncio\threads.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,345 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_membre\views.py first seen with mtime 1764253541.5901504
+DEBUG 2026-01-15 15:30:50,345 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\filters\output.py first seen with mtime 1756806607.1557398
+DEBUG 2026-01-15 15:30:50,346 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\http\cookie.py first seen with mtime 1756806607.9393396
+DEBUG 2026-01-15 15:30:50,346 autoreload File C:\Python313\Lib\http\cookies.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,346 autoreload File C:\Python313\Lib\asyncio\locks.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,346 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\loaders\__init__.py first seen with mtime 1756806607.9458501
+DEBUG 2026-01-15 15:30:50,346 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\related_descriptors.py first seen with mtime 1756806607.9198294
+DEBUG 2026-01-15 15:30:50,346 autoreload File C:\Python313\Lib\html\entities.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,346 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\tokens.py first seen with mtime 1756806607.4639592
+DEBUG 2026-01-15 15:30:50,346 autoreload File C:\Python313\Lib\platform.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,346 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\shortcuts.py first seen with mtime 1756806607.216006
+DEBUG 2026-01-15 15:30:50,346 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\sqlite3\creation.py first seen with mtime 1756806607.9098246
+DEBUG 2026-01-15 15:30:50,347 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\choices.py first seen with mtime 1756806607.95185
+DEBUG 2026-01-15 15:30:50,347 autoreload File C:\Python313\Lib\copy.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,347 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\backends\django.py first seen with mtime 1756806607.9453506
+DEBUG 2026-01-15 15:30:50,347 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\static.py first seen with mtime 1756806607.9588575
+DEBUG 2026-01-15 15:30:50,347 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\timesince.py first seen with mtime 1756806607.9563549
+DEBUG 2026-01-15 15:30:50,347 autoreload File C:\Python313\DLLs\_sqlite3.pyd first seen with mtime 1755178420.0
+DEBUG 2026-01-15 15:30:50,347 autoreload File C:\Python313\Lib\locale.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,347 autoreload File C:\Python313\Lib\asyncio\windows_utils.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,347 autoreload File C:\Python313\Lib\multiprocessing\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,347 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\encoding.py first seen with mtime 1756806607.95285
+DEBUG 2026-01-15 15:30:50,348 autoreload File C:\Python313\DLLs\_wmi.pyd first seen with mtime 1755178418.0
+DEBUG 2026-01-15 15:30:50,348 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\backends\base.py first seen with mtime 1756806607.7945879
+DEBUG 2026-01-15 15:30:50,348 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\sql\datastructures.py first seen with mtime 1756806607.9228294
+DEBUG 2026-01-15 15:30:50,348 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py first seen with mtime 1756806607.8893106
+DEBUG 2026-01-15 15:30:50,348 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py first seen with mtime 1756806607.4154246
+DEBUG 2026-01-15 15:30:50,348 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\urls\base.py first seen with mtime 1756806607.9498503
+DEBUG 2026-01-15 15:30:50,348 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\management\commands\runserver.py first seen with mtime 1756806607.8803062
+DEBUG 2026-01-15 15:30:50,348 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\uploadedfile.py first seen with mtime 1756806607.8878107
+DEBUG 2026-01-15 15:30:50,348 autoreload File C:\Python313\Lib\__future__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,349 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\sqlite3\base.py first seen with mtime 1756806607.9093275
+DEBUG 2026-01-15 15:30:50,349 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\translation\__init__.py first seen with mtime 1756806607.957355
+DEBUG 2026-01-15 15:30:50,349 autoreload File D:\Programmation\mediatheque\Lib\site-packages\colorama\initialise.py first seen with mtime 1764265626.5848703
+DEBUG 2026-01-15 15:30:50,349 autoreload File D:\Programmation\mediatheque\Lib\site-packages\colorama\ansi.py first seen with mtime 1764265626.5848703
+DEBUG 2026-01-15 15:30:50,349 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\templates.py first seen with mtime 1756806607.885311
+DEBUG 2026-01-15 15:30:50,349 autoreload File C:\Python313\Lib\asyncio\staggered.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,349 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\inspect.py first seen with mtime 1756806607.954855
+DEBUG 2026-01-15 15:30:50,349 autoreload File C:\Python313\Lib\asyncio\queues.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,349 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\base.py first seen with mtime 1756806607.8868105
+DEBUG 2026-01-15 15:30:50,350 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\query_utils.py first seen with mtime 1756806607.9173295
+DEBUG 2026-01-15 15:30:50,350 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\utils.py first seen with mtime 1756806607.8878107
+DEBUG 2026-01-15 15:30:50,350 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\forms\widgets.py first seen with mtime 1756806607.9263358
+DEBUG 2026-01-15 15:30:50,350 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\checks.py first seen with mtime 1756806607.8783057
+DEBUG 2026-01-15 15:30:50,350 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\management\__init__.py first seen with mtime 1756806607.8793056
+DEBUG 2026-01-15 15:30:50,350 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\http.py first seen with mtime 1756806607.954355
+DEBUG 2026-01-15 15:30:50,350 autoreload File C:\Python313\Lib\email\message.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,350 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\sql\constants.py first seen with mtime 1756806607.9223294
+DEBUG 2026-01-15 15:30:50,350 autoreload File C:\Python313\Lib\difflib.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,350 autoreload File C:\Python313\Lib\pathlib\_abc.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,351 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\widgets.py first seen with mtime 1756806607.300071
+DEBUG 2026-01-15 15:30:50,351 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\apps.py first seen with mtime 1756806607.5129943
+DEBUG 2026-01-15 15:30:50,351 autoreload File C:\Python313\Lib\email\_parseaddr.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,351 autoreload File C:\Python313\Lib\_colorize.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,351 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_membre\__init__.py first seen with mtime 1756806638.2745745
+DEBUG 2026-01-15 15:30:50,351 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\storage\mixins.py first seen with mtime 1756806607.8888106
+DEBUG 2026-01-15 15:30:50,351 autoreload File C:\Python313\Lib\asyncio\subprocess.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,351 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\templatetags\l10n.py first seen with mtime 1756806607.94735
+DEBUG 2026-01-15 15:30:50,351 autoreload File C:\Python313\Lib\encodings\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,351 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\defaultfilters.py first seen with mtime 1756806607.9428425
+DEBUG 2026-01-15 15:30:50,351 autoreload File C:\Python313\Lib\gzip.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,351 autoreload File C:\Python313\Lib\asyncio\protocols.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,351 autoreload File C:\Python313\Lib\asyncio\selector_events.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,351 autoreload File C:\Python313\Lib\warnings.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,351 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\messages.py first seen with mtime 1756806607.8848107
+DEBUG 2026-01-15 15:30:50,351 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\__init__.py first seen with mtime 1756806607.7930803
+DEBUG 2026-01-15 15:30:50,352 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\actions.py first seen with mtime 1756806607.2970707
+DEBUG 2026-01-15 15:30:50,352 autoreload File C:\Python313\Lib\_opcode_metadata.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,352 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\i18n.py first seen with mtime 1756806607.9588575
+DEBUG 2026-01-15 15:30:50,352 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\keywords.py first seen with mtime 1756806607.153228
+DEBUG 2026-01-15 15:30:50,352 autoreload File C:\Python313\Lib\email\_encoded_words.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,352 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\storage\base.py first seen with mtime 1756806607.8883107
+DEBUG 2026-01-15 15:30:50,352 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\filters\__init__.py first seen with mtime 1756806607.1552362
+DEBUG 2026-01-15 15:30:50,352 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\model_checks.py first seen with mtime 1756806607.8848107
+DEBUG 2026-01-15 15:30:50,352 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\json.py first seen with mtime 1756806607.9188297
+DEBUG 2026-01-15 15:30:50,352 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\management\commands\__init__.py first seen with mtime 1756806607.8928137
+DEBUG 2026-01-15 15:30:50,352 autoreload File C:\Python313\Lib\sqlite3\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,352 autoreload File C:\Python313\Lib\email\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,353 autoreload File C:\Python313\Lib\json\decoder.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,353 autoreload File C:\Python313\Lib\bisect.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,353 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\middleware.py first seen with mtime 1756806607.7930803
+DEBUG 2026-01-15 15:30:50,353 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\apps\config.py first seen with mtime 1756806607.2165072
+DEBUG 2026-01-15 15:30:50,353 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\filters.py first seen with mtime 1756806607.2980733
+DEBUG 2026-01-15 15:30:50,353 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\hashers.py first seen with mtime 1756806607.4629538
+DEBUG 2026-01-15 15:30:50,353 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\signals.py first seen with mtime 1756806607.4639592
+DEBUG 2026-01-15 15:30:50,353 autoreload File C:\Python313\Lib\email\headerregistry.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,353 autoreload File C:\Python313\Lib\json\scanner.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,354 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\registry.py first seen with mtime 1756806607.885311
+DEBUG 2026-01-15 15:30:50,354 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\response.py first seen with mtime 1756806607.9443524
+DEBUG 2026-01-15 15:30:50,354 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\constants.py first seen with mtime 1756806607.9153328
+DEBUG 2026-01-15 15:30:50,354 autoreload File C:\Python313\Lib\logging\config.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,354 autoreload File C:\Python313\Lib\decimal.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,354 autoreload File C:\Python313\Lib\asyncio\streams.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,354 autoreload File C:\Python313\Lib\asyncio\taskgroups.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,354 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\views.py first seen with mtime 1756806607.8793056
+DEBUG 2026-01-15 15:30:50,354 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\models.py first seen with mtime 1756806607.2985706
+DEBUG 2026-01-15 15:30:50,355 autoreload File C:\Python313\Lib\email\policy.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,355 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\exceptions.py first seen with mtime 1756806607.153228
+DEBUG 2026-01-15 15:30:50,355 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\sites.py first seen with mtime 1756806607.299071
+DEBUG 2026-01-15 15:30:50,355 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\lorem_ipsum.py first seen with mtime 1756806607.9553552
+DEBUG 2026-01-15 15:30:50,355 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\images.py first seen with mtime 1756806607.8868105
+DEBUG 2026-01-15 15:30:50,355 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\related_lookups.py first seen with mtime 1756806607.9198294
+DEBUG 2026-01-15 15:30:50,355 autoreload File C:\Python313\Lib\asyncio\runners.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,356 autoreload File C:\Python313\Lib\wsgiref\headers.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,356 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\apps\__init__.py first seen with mtime 1756806607.216006
+DEBUG 2026-01-15 15:30:50,356 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\management\commands\runserver.py first seen with mtime 1756806607.895322
+DEBUG 2026-01-15 15:30:50,356 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\functions\mixins.py first seen with mtime 1756806607.9213295
+DEBUG 2026-01-15 15:30:50,356 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\defaulttags.py first seen with mtime 1756806607.9428425
+DEBUG 2026-01-15 15:30:50,356 autoreload File C:\Python313\Lib\socket.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,356 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\forms\forms.py first seen with mtime 1756806607.9248345
+DEBUG 2026-01-15 15:30:50,356 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\asyncio.py first seen with mtime 1756806607.9513502
+DEBUG 2026-01-15 15:30:50,356 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\cache\backends\filebased.py first seen with mtime 1756806607.8828056
+DEBUG 2026-01-15 15:30:50,357 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\base_user.py first seen with mtime 1756806607.4614532
+DEBUG 2026-01-15 15:30:50,357 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\caches.py first seen with mtime 1756806607.884311
+DEBUG 2026-01-15 15:30:50,357 autoreload File C:\Python313\Lib\email\quoprimime.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,357 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\optimizer.py first seen with mtime 1756806607.9123244
+DEBUG 2026-01-15 15:30:50,357 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\forms\boundfield.py first seen with mtime 1756806607.9243345
+DEBUG 2026-01-15 15:30:50,357 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\decorators\http.py first seen with mtime 1756806607.9608557
+DEBUG 2026-01-15 15:30:50,357 autoreload File C:\Python313\Lib\contextvars.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,357 autoreload File C:\Python313\Lib\heapq.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,357 autoreload File D:\Programmation\mediatheque\mediatheque_project\manage.py first seen with mtime 1764254449.900406
+DEBUG 2026-01-15 15:30:50,357 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\sqlite3\schema.py first seen with mtime 1756806607.9108243
+DEBUG 2026-01-15 15:30:50,358 autoreload File C:\Python313\Lib\email\mime\text.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,358 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\apps.py first seen with mtime 1756806607.4609537
+DEBUG 2026-01-15 15:30:50,358 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\regex_helper.py first seen with mtime 1756806607.9558551
+DEBUG 2026-01-15 15:30:50,358 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\loaders\cached.py first seen with mtime 1756806607.9463503
+DEBUG 2026-01-15 15:30:50,358 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sites\shortcuts.py first seen with mtime 1756806607.8367853
+DEBUG 2026-01-15 15:30:50,358 autoreload File C:\Python313\Lib\html\parser.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,358 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\__init__.py first seen with mtime 1756806607.4609537
+DEBUG 2026-01-15 15:30:50,358 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\base\creation.py first seen with mtime 1756806607.9013221
+DEBUG 2026-01-15 15:30:50,358 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\deprecation.py first seen with mtime 1756806607.95285
+DEBUG 2026-01-15 15:30:50,358 autoreload File C:\Python313\DLLs\_overlapped.pyd first seen with mtime 1755178418.0
+DEBUG 2026-01-15 15:30:50,359 autoreload File C:\Python313\Lib\sysconfig\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,359 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\state.py first seen with mtime 1756806607.9128244
+DEBUG 2026-01-15 15:30:50,359 autoreload File C:\Python313\Lib\traceback.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,359 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\management\base.py first seen with mtime 1756806607.8918107
+DEBUG 2026-01-15 15:30:50,359 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\engine\grouping.py first seen with mtime 1756806607.1547363
+DEBUG 2026-01-15 15:30:50,359 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\checks.py first seen with mtime 1756806607.4619546
+DEBUG 2026-01-15 15:30:50,359 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\storage\memory.py first seen with mtime 1756806607.8888106
+DEBUG 2026-01-15 15:30:50,359 autoreload File C:\Python313\Lib\types.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,359 autoreload File C:\Python313\Lib\re\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,359 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\urls\conf.py first seen with mtime 1756806607.9498503
+DEBUG 2026-01-15 15:30:50,359 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\models.py first seen with mtime 1756806607.5139995
+DEBUG 2026-01-15 15:30:50,360 autoreload File C:\Python313\Lib\fnmatch.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,360 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\views.py first seen with mtime 1768484367.05531
+DEBUG 2026-01-15 15:30:50,360 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\helpers.py first seen with mtime 1756806607.2985706
+DEBUG 2026-01-15 15:30:50,360 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\generic\base.py first seen with mtime 1756806607.9613566
+DEBUG 2026-01-15 15:30:50,360 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\decorators.py first seen with mtime 1756806607.4624536
+DEBUG 2026-01-15 15:30:50,360 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\forms\utils.py first seen with mtime 1756806607.9258358
+DEBUG 2026-01-15 15:30:50,360 autoreload File C:\Python313\Lib\ssl.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,360 autoreload File C:\Python313\Lib\email\feedparser.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,360 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\operations\base.py first seen with mtime 1756806607.9138267
+DEBUG 2026-01-15 15:30:50,360 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\__init__.py first seen with mtime 1756806607.2155082
+DEBUG 2026-01-15 15:30:50,360 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\constraints.py first seen with mtime 1756806607.9153328
+DEBUG 2026-01-15 15:30:50,361 autoreload File C:\Python313\Lib\asyncio\timeouts.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,361 autoreload File D:\Programmation\mediatheque\Lib\site-packages\colorama\ansitowin32.py first seen with mtime 1764265626.5848703
+DEBUG 2026-01-15 15:30:50,361 autoreload File C:\Python313\Lib\concurrent\futures\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,361 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\sql\__init__.py first seen with mtime 1756806607.9218295
+DEBUG 2026-01-15 15:30:50,361 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\version.py first seen with mtime 1756806607.956855
+DEBUG 2026-01-15 15:30:50,361 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\generic\__init__.py first seen with mtime 1756806607.9613566
+DEBUG 2026-01-15 15:30:50,361 autoreload File C:\Python313\Lib\keyword.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\decorators\cache.py first seen with mtime 1756806607.9598563
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\generic\detail.py first seen with mtime 1756806607.9618552
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\handlers.py first seen with mtime 1756806607.8783057
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\signals.py first seen with mtime 1756806607.9003193
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\cache\backends\__init__.py first seen with mtime 1756806607.8823059
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\cache\utils.py first seen with mtime 1756806607.8823059
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\operations\fields.py first seen with mtime 1756806607.9138267
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\generic\edit.py first seen with mtime 1756806607.9618552
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\autoreload.py first seen with mtime 1756806607.9423425
+DEBUG 2026-01-15 15:30:50,362 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\wsgi.py first seen with mtime 1756806607.8818066
+DEBUG 2026-01-15 15:30:50,362 autoreload File C:\Python313\Lib\string.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\apps.py first seen with mtime 1756806607.7111936
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\views\autocomplete.py first seen with mtime 1756806607.4164245
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\formatter.py first seen with mtime 1756806607.153228
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\files.py first seen with mtime 1756806607.9183323
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\safestring.py first seen with mtime 1756806607.9558551
+DEBUG 2026-01-15 15:30:50,363 autoreload File C:\Python313\Lib\tempfile.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\Lib\site-packages\asgiref\current_thread_executor.py first seen with mtime 1756806607.1842656
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\checks.py first seen with mtime 1756806607.2975707
+DEBUG 2026-01-15 15:30:50,363 autoreload File C:\Python313\Lib\asyncio\base_tasks.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\templatetags\admin_urls.py first seen with mtime 1756806607.4159255
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_mediatheque\urls.py first seen with mtime 1764288156.1147685
+DEBUG 2026-01-15 15:30:50,363 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\library.py first seen with mtime 1756806607.943847
+DEBUG 2026-01-15 15:30:50,364 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\functions\comparison.py first seen with mtime 1756806607.9208293
+DEBUG 2026-01-15 15:30:50,364 autoreload File C:\Python313\Lib\socketserver.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,364 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\dispatch\__init__.py first seen with mtime 1756806607.9238317
+DEBUG 2026-01-15 15:30:50,364 autoreload File C:\Python313\Lib\random.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,364 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\views.py first seen with mtime 1756806607.4644637
+DEBUG 2026-01-15 15:30:50,364 autoreload File D:\Programmation\mediatheque\Lib\site-packages\asgiref\__init__.py first seen with mtime 1756806607.1832623
+DEBUG 2026-01-15 15:30:50,364 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\cache\backends\locmem.py first seen with mtime 1756806607.8828056
+DEBUG 2026-01-15 15:30:50,364 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\cache.py first seen with mtime 1756806607.9513502
+DEBUG 2026-01-15 15:30:50,364 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\security\sessions.py first seen with mtime 1756806607.8863108
+DEBUG 2026-01-15 15:30:50,365 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\templatetags\base.py first seen with mtime 1756806607.4159255
+DEBUG 2026-01-15 15:30:50,365 autoreload File C:\Python313\Lib\mimetypes.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,365 autoreload File C:\Python313\Lib\typing.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,365 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\exceptions.py first seen with mtime 1756806607.9113245
+DEBUG 2026-01-15 15:30:50,365 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\crypto.py first seen with mtime 1756806607.9523501
+DEBUG 2026-01-15 15:30:50,365 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\__init__.py first seen with mtime 1756806607.7111936
+DEBUG 2026-01-15 15:30:50,365 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\models.py first seen with mtime 1762475104.6162436
+DEBUG 2026-01-15 15:30:50,365 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\cli.py first seen with mtime 1756806607.1527278
+DEBUG 2026-01-15 15:30:50,365 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\base\client.py first seen with mtime 1756806607.9008193
+DEBUG 2026-01-15 15:30:50,365 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\deconstruct.py first seen with mtime 1756806607.95285
+DEBUG 2026-01-15 15:30:50,365 autoreload File C:\Python313\Lib\ctypes\wintypes.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,366 autoreload File D:\Programmation\mediatheque\Lib\site-packages\asgiref\local.py first seen with mtime 1756806607.1842656
+DEBUG 2026-01-15 15:30:50,366 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\move.py first seen with mtime 1756806607.8873107
+DEBUG 2026-01-15 15:30:50,366 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\translation\trans_real.py first seen with mtime 1756806607.957855
+DEBUG 2026-01-15 15:30:50,366 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\conf\__init__.py first seen with mtime 1756806607.2170045
+DEBUG 2026-01-15 15:30:50,366 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\loader_tags.py first seen with mtime 1756806607.9443524
+DEBUG 2026-01-15 15:30:50,366 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\templatetags\tz.py first seen with mtime 1756806607.94735
+DEBUG 2026-01-15 15:30:50,366 autoreload File C:\Python313\Lib\importlib\_abc.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,366 autoreload File C:\Python313\Lib\enum.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,366 autoreload File C:\Python313\Lib\email\iterators.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,366 autoreload File C:\Python313\Lib\json\encoder.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,366 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\loaders\app_directories.py first seen with mtime 1756806607.9458501
+DEBUG 2026-01-15 15:30:50,367 autoreload File C:\Python313\Lib\datetime.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,367 autoreload File C:\Python313\Lib\collections\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,367 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\loaders\filesystem.py first seen with mtime 1756806607.9463503
+DEBUG 2026-01-15 15:30:50,367 autoreload File C:\Python313\Lib\contextlib.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,367 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\storage\base.py first seen with mtime 1756806607.7126932
+DEBUG 2026-01-15 15:30:50,367 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\forms\fields.py first seen with mtime 1756806607.9248345
+DEBUG 2026-01-15 15:30:50,367 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\duration.py first seen with mtime 1756806607.95285
+DEBUG 2026-01-15 15:30:50,367 autoreload File C:\Python313\Lib\ipaddress.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,367 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\views.py first seen with mtime 1756806607.514503
+DEBUG 2026-01-15 15:30:50,367 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\__init__.py first seen with mtime 1756806607.883808
+DEBUG 2026-01-15 15:30:50,367 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\base.py first seen with mtime 1756806607.9148293
+DEBUG 2026-01-15 15:30:50,368 autoreload File C:\Python313\Lib\re\_parser.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,368 autoreload File C:\Python313\Lib\reprlib.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,368 autoreload File C:\Python313\Lib\asyncio\base_events.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,368 autoreload File C:\Python313\Lib\multiprocessing\context.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,368 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_membre\models.py first seen with mtime 1764253184.4856765
+DEBUG 2026-01-15 15:30:50,368 autoreload File C:\Python313\Lib\ctypes\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,368 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\urls\__init__.py first seen with mtime 1756806607.9493506
+DEBUG 2026-01-15 15:30:50,368 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\lookups.py first seen with mtime 1756806607.9163296
+DEBUG 2026-01-15 15:30:50,368 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\sqlite3\features.py first seen with mtime 1756806607.9098246
+DEBUG 2026-01-15 15:30:50,368 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\operations\__init__.py first seen with mtime 1756806607.9128244
+DEBUG 2026-01-15 15:30:50,368 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\forms\renderers.py first seen with mtime 1756806607.9258358
+DEBUG 2026-01-15 15:30:50,369 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\templatetags\__init__.py first seen with mtime 1756806607.4154246
+DEBUG 2026-01-15 15:30:50,369 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\storage\handler.py first seen with mtime 1756806607.8888106
+DEBUG 2026-01-15 15:30:50,369 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\middleware\cache.py first seen with mtime 1756806607.9403396
+DEBUG 2026-01-15 15:30:50,369 autoreload File C:\Python313\Lib\textwrap.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,369 autoreload File C:\Python313\DLLs\_decimal.pyd first seen with mtime 1755178420.0
+DEBUG 2026-01-15 15:30:50,369 autoreload File C:\Python313\Lib\linecache.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,369 autoreload File C:\Python313\Lib\base64.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,369 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\serializers\json.py first seen with mtime 1756806607.8983195
+DEBUG 2026-01-15 15:30:50,369 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\lexer.py first seen with mtime 1756806607.153228
+DEBUG 2026-01-15 15:30:50,369 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_mediatheque\__init__.py first seen with mtime 1756806638.2745745
+DEBUG 2026-01-15 15:30:50,369 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\compatibility\django_4_0.py first seen with mtime 1756806607.8858109
+DEBUG 2026-01-15 15:30:50,369 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\api.py first seen with mtime 1756806607.7111936
+DEBUG 2026-01-15 15:30:50,369 autoreload File C:\Python313\Lib\lzma.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,370 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\autodetector.py first seen with mtime 1756806607.9113245
+DEBUG 2026-01-15 15:30:50,370 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\decorators\debug.py first seen with mtime 1756806607.960356
+DEBUG 2026-01-15 15:30:50,370 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\dispatch\dispatcher.py first seen with mtime 1756806607.9238317
+DEBUG 2026-01-15 15:30:50,370 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\numberformat.py first seen with mtime 1756806607.9558551
+DEBUG 2026-01-15 15:30:50,370 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\engine\statement_splitter.py first seen with mtime 1756806607.1552362
+DEBUG 2026-01-15 15:30:50,370 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\apps.py first seen with mtime 1756806607.7930803
+DEBUG 2026-01-15 15:30:50,370 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\filters\others.py first seen with mtime 1756806607.1557398
+DEBUG 2026-01-15 15:30:50,370 autoreload File C:\Python313\Lib\urllib\request.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,370 autoreload File C:\Python313\Lib\concurrent\futures\thread.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,371 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\database.py first seen with mtime 1756806607.884311
+DEBUG 2026-01-15 15:30:50,371 autoreload File C:\Python313\Lib\operator.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,371 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\log.py first seen with mtime 1756806607.9553552
+DEBUG 2026-01-15 15:30:50,371 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\forms\formsets.py first seen with mtime 1756806607.9248345
+DEBUG 2026-01-15 15:30:50,371 autoreload File C:\Python313\Lib\urllib\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,371 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\forms.py first seen with mtime 1756806607.4629538
+DEBUG 2026-01-15 15:30:50,371 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\base\operations.py first seen with mtime 1756806607.9018195
+DEBUG 2026-01-15 15:30:50,371 autoreload File C:\Python313\Lib\secrets.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,371 autoreload File C:\Python313\Lib\asyncio\proactor_events.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,371 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\options.py first seen with mtime 1756806607.9168293
+DEBUG 2026-01-15 15:30:50,371 autoreload File C:\Python313\Lib\asyncio\events.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,372 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\decorators.py first seen with mtime 1756806607.95285
+DEBUG 2026-01-15 15:30:50,372 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\middleware.py first seen with mtime 1756806607.7116933
+DEBUG 2026-01-15 15:30:50,372 autoreload File D:\Programmation\mediatheque\Lib\site-packages\colorama\win32.py first seen with mtime 1764265626.5853693
+DEBUG 2026-01-15 15:30:50,372 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\dateparse.py first seen with mtime 1756806607.9523501
+DEBUG 2026-01-15 15:30:50,372 autoreload File C:\Python313\Lib\email\_header_value_parser.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,372 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\password_validation.py first seen with mtime 1756806607.4629538
+DEBUG 2026-01-15 15:30:50,372 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\files.py first seen with mtime 1756806607.8848107
+DEBUG 2026-01-15 15:30:50,372 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\mail\message.py first seen with mtime 1756806607.8903108
+DEBUG 2026-01-15 15:30:50,372 autoreload File C:\Python313\Lib\subprocess.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,373 autoreload File C:\Python313\Lib\logging\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\functions\window.py first seen with mtime 1756806607.9218295
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\loader.py first seen with mtime 1756806607.9443524
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\admin.py first seen with mtime 1756806607.4609537
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\filters\right_margin.py first seen with mtime 1756806607.15624
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\storage\filesystem.py first seen with mtime 1756806607.8883107
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\options.py first seen with mtime 1756806607.299071
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\timezone.py first seen with mtime 1756806607.956855
+DEBUG 2026-01-15 15:30:50,373 autoreload File C:\Python313\Lib\asyncio\constants.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\templatetags\__init__.py first seen with mtime 1756806607.94685
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\validators.py first seen with mtime 1756806607.4644637
+DEBUG 2026-01-15 15:30:50,373 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\dates.py first seen with mtime 1756806607.95285
+DEBUG 2026-01-15 15:30:50,374 autoreload File C:\Python313\Lib\zoneinfo\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,374 autoreload File C:\Python313\Lib\email\charset.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,374 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\__init__.py first seen with mtime 1756806607.2965708
+DEBUG 2026-01-15 15:30:50,374 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\forms.py first seen with mtime 1756806607.5139995
+DEBUG 2026-01-15 15:30:50,374 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\composite.py first seen with mtime 1756806607.9183323
+DEBUG 2026-01-15 15:30:50,374 autoreload File C:\Python313\Lib\email\base64mime.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,374 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\__init__.py first seen with mtime 1756806607.2970707
+DEBUG 2026-01-15 15:30:50,374 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\__init__.py first seen with mtime 1756806607.9108243
+DEBUG 2026-01-15 15:30:50,374 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\urls\exceptions.py first seen with mtime 1756806607.9503503
+DEBUG 2026-01-15 15:30:50,374 autoreload File C:\Python313\Lib\concurrent\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,374 autoreload File C:\Python313\Lib\hmac.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,374 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\html.py first seen with mtime 1756806607.954355
+DEBUG 2026-01-15 15:30:50,375 autoreload File C:\Python313\Lib\zoneinfo\_common.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,375 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\templatetags\cache.py first seen with mtime 1756806607.94685
+DEBUG 2026-01-15 15:30:50,375 autoreload File C:\Python313\Lib\hashlib.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,375 autoreload File C:\Python313\Lib\selectors.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,375 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\filters\tokens.py first seen with mtime 1756806607.15624
+DEBUG 2026-01-15 15:30:50,375 autoreload File C:\Python313\DLLs\_zoneinfo.pyd first seen with mtime 1755178418.0
+DEBUG 2026-01-15 15:30:50,375 autoreload File C:\Python313\Lib\re\_casefix.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,375 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\filters\aligned_indent.py first seen with mtime 1756806607.1552362
+DEBUG 2026-01-15 15:30:50,375 autoreload File C:\Python313\Lib\wsgiref\handlers.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,375 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\storage\__init__.py first seen with mtime 1756806607.8883107
+DEBUG 2026-01-15 15:30:50,375 autoreload File C:\Python313\Lib\ctypes\_endian.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,375 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\uploadhandler.py first seen with mtime 1756806607.8878107
+DEBUG 2026-01-15 15:30:50,376 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\utils.py first seen with mtime 1756806607.9178295
+DEBUG 2026-01-15 15:30:50,376 autoreload File C:\Python313\DLLs\_hashlib.pyd first seen with mtime 1755178420.0
+DEBUG 2026-01-15 15:30:50,376 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\mail\__init__.py first seen with mtime 1756806607.8898108
+DEBUG 2026-01-15 15:30:50,376 autoreload File C:\Python313\Lib\email\mime\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,376 autoreload File C:\Python313\Lib\graphlib.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,376 autoreload File C:\Python313\Lib\email\_policybase.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,376 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\middleware\security.py first seen with mtime 1756806607.9418397
+DEBUG 2026-01-15 15:30:50,376 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\base\base.py first seen with mtime 1756806607.9008193
+DEBUG 2026-01-15 15:30:50,376 autoreload File D:\Programmation\mediatheque\Lib\site-packages\colorama\__init__.py first seen with mtime 1764265626.5843701
+DEBUG 2026-01-15 15:30:50,376 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\forms\models.py first seen with mtime 1756806607.9253354
+DEBUG 2026-01-15 15:30:50,376 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\engine\__init__.py first seen with mtime 1756806607.1547363
+DEBUG 2026-01-15 15:30:50,377 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\module_loading.py first seen with mtime 1756806607.9553552
+DEBUG 2026-01-15 15:30:50,377 autoreload File C:\Python313\Lib\bz2.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,377 autoreload File C:\Python313\Lib\statistics.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,377 autoreload File C:\Python313\Lib\inspect.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,377 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\exception.py first seen with mtime 1756806607.8898108
+DEBUG 2026-01-15 15:30:50,377 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\http\multipartparser.py first seen with mtime 1756806607.9398396
+DEBUG 2026-01-15 15:30:50,377 autoreload File C:\Python313\Lib\shutil.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,377 autoreload File C:\Python313\Lib\asyncio\transports.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,377 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\constants.py first seen with mtime 1756806607.7116933
+DEBUG 2026-01-15 15:30:50,377 autoreload File C:\Python313\Lib\ast.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,377 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\base\schema.py first seen with mtime 1756806607.9023192
+DEBUG 2026-01-15 15:30:50,377 autoreload File C:\Python313\Lib\email\errors.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,378 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\translation.py first seen with mtime 1756806607.885311
+DEBUG 2026-01-15 15:30:50,378 autoreload File C:\Python313\Lib\signal.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,378 autoreload File C:\Python313\Lib\asyncio\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,378 autoreload File C:\Python313\Lib\asyncio\base_subprocess.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,378 autoreload File C:\Python313\Lib\email\mime\message.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,378 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\utils.py first seen with mtime 1756806607.7121933
+DEBUG 2026-01-15 15:30:50,378 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\__init__.py first seen with mtime 1756806607.8868105
+DEBUG 2026-01-15 15:30:50,378 autoreload File C:\Python313\DLLs\_bz2.pyd first seen with mtime 1755178418.0
+DEBUG 2026-01-15 15:30:50,378 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\fields.py first seen with mtime 1756806607.5129943
+DEBUG 2026-01-15 15:30:50,378 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\__init__.py first seen with mtime 1756806607.9183323
+DEBUG 2026-01-15 15:30:50,378 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\context.py first seen with mtime 1756806607.9428425
+DEBUG 2026-01-15 15:30:50,378 autoreload File C:\Python313\Lib\email\utils.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,378 autoreload File C:\Python313\Lib\glob.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,378 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\engine\filter_stack.py first seen with mtime 1756806607.1547363
+DEBUG 2026-01-15 15:30:50,378 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\utils.py first seen with mtime 1756806607.1542318
+DEBUG 2026-01-15 15:30:50,379 autoreload File C:\Python313\Lib\copyreg.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\smartif.py first seen with mtime 1756806607.9448502
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\__init__.py first seen with mtime 1756806607.95085
+DEBUG 2026-01-15 15:30:50,379 autoreload File C:\Python313\Lib\token.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,379 autoreload File C:\Python313\Lib\getpass.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\forms\__init__.py first seen with mtime 1756806607.9243345
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\ipv6.py first seen with mtime 1756806607.954855
+DEBUG 2026-01-15 15:30:50,379 autoreload File C:\Python313\Lib\asyncio\log.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,379 autoreload File C:\Python313\Lib\argparse.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,379 autoreload File C:\Python313\Lib\concurrent\futures\_base.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\__init__.py first seen with mtime 1756806607.9423425
+DEBUG 2026-01-15 15:30:50,379 autoreload File C:\Python313\Lib\_markupbase.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,379 autoreload File C:\Python313\Lib\re\_compiler.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\__init__.py first seen with mtime 1756806607.1527278
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\expressions.py first seen with mtime 1756806607.9163296
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\utils.py first seen with mtime 1756806607.8793056
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\asgiref\sync.py first seen with mtime 1756806607.1852708
+DEBUG 2026-01-15 15:30:50,379 autoreload File C:\Python313\Lib\http\client.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,379 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\exceptions.py first seen with mtime 1756806607.7930803
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\views\__init__.py first seen with mtime 1756806607.4164245
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\middleware\__init__.py first seen with mtime 1756806607.9403396
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\management\commands\__init__.py first seen with mtime 1756806607.8798103
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\http\request.py first seen with mtime 1756806607.9398396
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\operations\models.py first seen with mtime 1756806607.9143295
+DEBUG 2026-01-15 15:30:50,380 autoreload File C:\Python313\Lib\fractions.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,380 autoreload File C:\Python313\Lib\wsgiref\simple_server.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,380 autoreload File C:\Python313\Lib\pickle.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,380 autoreload File C:\Python313\Lib\weakref.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,380 autoreload File C:\Python313\Lib\tokenize.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\__init__.py first seen with mtime 1756806638.2745745
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\functions\math.py first seen with mtime 1756806607.9213295
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\signals.py first seen with mtime 1756806607.9178295
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\base\introspection.py first seen with mtime 1756806607.9013221
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\decorators\__init__.py first seen with mtime 1756806607.9593577
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\security\__init__.py first seen with mtime 1756806607.8858109
+DEBUG 2026-01-15 15:30:50,380 autoreload File C:\Python313\Lib\sqlite3\dbapi2.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,380 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\finders.py first seen with mtime 1756806607.8783057
+DEBUG 2026-01-15 15:30:50,381 autoreload File C:\Python313\Lib\html\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,381 autoreload File C:\Python313\DLLs\_lzma.pyd first seen with mtime 1755178420.0
+DEBUG 2026-01-15 15:30:50,381 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\views\main.py first seen with mtime 1756806607.4169242
+DEBUG 2026-01-15 15:30:50,381 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\temp.py first seen with mtime 1756806607.8873107
+DEBUG 2026-01-15 15:30:50,381 autoreload File C:\Python313\Lib\threading.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,381 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\apps.py first seen with mtime 1756806607.877806
+DEBUG 2026-01-15 15:30:50,381 autoreload File C:\Python313\Lib\asyncio\mixins.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,381 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\serializers\base.py first seen with mtime 1756806607.8983195
+DEBUG 2026-01-15 15:30:50,381 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\management\__init__.py first seen with mtime 1756806607.5530274
+DEBUG 2026-01-15 15:30:50,382 autoreload File C:\Python313\Lib\gettext.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,382 autoreload File C:\Python313\Lib\asyncio\windows_events.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,382 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\backends\__init__.py first seen with mtime 1756806607.7940838
+DEBUG 2026-01-15 15:30:50,382 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py first seen with mtime 1756806607.9428425
+DEBUG 2026-01-15 15:30:50,382 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\hashable.py first seen with mtime 1756806607.954355
+DEBUG 2026-01-15 15:30:50,382 autoreload File C:\Python313\Lib\asyncio\sslproto.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,382 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\decorators\common.py first seen with mtime 1756806607.9598563
+DEBUG 2026-01-15 15:30:50,382 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\engine.py first seen with mtime 1756806607.943847
+DEBUG 2026-01-15 15:30:50,382 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\functions\__init__.py first seen with mtime 1756806607.9203296
+DEBUG 2026-01-15 15:30:50,382 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\utils.py first seen with mtime 1756806607.8998191
+DEBUG 2026-01-15 15:30:50,382 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\tokens.py first seen with mtime 1756806607.1542318
+DEBUG 2026-01-15 15:30:50,383 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\security\csrf.py first seen with mtime 1756806607.8863108
+DEBUG 2026-01-15 15:30:50,383 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\manager.py first seen with mtime 1756806607.9168293
+DEBUG 2026-01-15 15:30:50,383 autoreload File C:\Python313\DLLs\_asyncio.pyd first seen with mtime 1755178420.0
+DEBUG 2026-01-15 15:30:50,383 autoreload File D:\Programmation\mediatheque\Lib\site-packages\colorama\winterm.py first seen with mtime 1764265626.585869
+DEBUG 2026-01-15 15:30:50,383 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\aggregates.py first seen with mtime 1756806607.9148293
+DEBUG 2026-01-15 15:30:50,383 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\admin.py first seen with mtime 1756806607.5129943
+DEBUG 2026-01-15 15:30:50,383 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\__init__.py first seen with mtime 1756806607.8888106
+DEBUG 2026-01-15 15:30:50,383 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\management\commands\makemigrations.py first seen with mtime 1756806607.8948195
+DEBUG 2026-01-15 15:30:50,383 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\enums.py first seen with mtime 1756806607.9158297
+DEBUG 2026-01-15 15:30:50,384 autoreload File C:\Python313\Lib\asyncio\coroutines.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\urls\resolvers.py first seen with mtime 1756806607.9503503
+DEBUG 2026-01-15 15:30:50,384 autoreload File C:\Python313\DLLs\_socket.pyd first seen with mtime 1755178418.0
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\functions\text.py first seen with mtime 1756806607.9218295
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\generic\list.py first seen with mtime 1756806607.9623554
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\formats.py first seen with mtime 1756806607.9538522
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\compatibility\__init__.py first seen with mtime 1756806607.8858109
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\cache\backends\base.py first seen with mtime 1756806607.8828056
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\utils.py first seen with mtime 1756806607.299572
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\ddl_references.py first seen with mtime 1756806607.9003193
+DEBUG 2026-01-15 15:30:50,384 autoreload File C:\Python313\Lib\http\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,384 autoreload File C:\Python313\Lib\_compat_pickle.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,384 autoreload File C:\Python313\Lib\functools.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\base_session.py first seen with mtime 1756806607.7930803
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\generated.py first seen with mtime 1756806607.9188297
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\urls.py first seen with mtime 1768485991.346786
+DEBUG 2026-01-15 15:30:50,384 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\exceptions.py first seen with mtime 1756806607.8813057
+DEBUG 2026-01-15 15:30:50,384 autoreload File C:\Python313\Lib\urllib\parse.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\backends\base.py first seen with mtime 1756806607.9453506
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\__init__.py first seen with mtime 1756806607.5129943
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\apps.py first seen with mtime 1756806607.2975707
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\management\utils.py first seen with mtime 1756806607.8928137
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\base\validation.py first seen with mtime 1756806607.9023192
+DEBUG 2026-01-15 15:30:50,385 autoreload File C:\Python313\Lib\email\parser.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\conf\locale\__init__.py first seen with mtime 1756806607.2180061
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\serializers\python.py first seen with mtime 1756806607.8988192
+DEBUG 2026-01-15 15:30:50,385 autoreload File C:\Python313\Lib\http\server.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\sqlparse\sql.py first seen with mtime 1756806607.153228
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\templatetags\static.py first seen with mtime 1756806607.94735
+DEBUG 2026-01-15 15:30:50,385 autoreload File C:\Python313\Lib\importlib\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\commands.py first seen with mtime 1756806607.884311
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\sqlite3\introspection.py first seen with mtime 1756806607.9103246
+DEBUG 2026-01-15 15:30:50,385 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_mediatheque\settings.py first seen with mtime 1768487441.9222753
+DEBUG 2026-01-15 15:30:50,386 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\checks.py first seen with mtime 1756806607.5129943
+DEBUG 2026-01-15 15:30:50,386 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\security\base.py first seen with mtime 1756806607.8863108
+DEBUG 2026-01-15 15:30:50,386 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\servers\basehttp.py first seen with mtime 1756806607.8993194
+DEBUG 2026-01-15 15:30:50,386 autoreload File C:\Python313\Lib\numbers.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,386 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\text.py first seen with mtime 1756806607.9563549
+DEBUG 2026-01-15 15:30:50,386 autoreload File C:\Python313\Lib\json\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,386 autoreload File C:\Python313\Lib\_weakrefset.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,386 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\sqlite3\__init__.py first seen with mtime 1756806607.9093275
+DEBUG 2026-01-15 15:30:50,386 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\autoreload.py first seen with mtime 1756806607.9513502
+DEBUG 2026-01-15 15:30:50,387 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\sqlite3\client.py first seen with mtime 1756806607.9098246
+DEBUG 2026-01-15 15:30:50,387 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\utils.py first seen with mtime 1756806607.9448502
+DEBUG 2026-01-15 15:30:50,387 autoreload File C:\Python313\Lib\wsgiref\util.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,387 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\transaction.py first seen with mtime 1756806607.8998191
+DEBUG 2026-01-15 15:30:50,387 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\storage\__init__.py first seen with mtime 1756806607.7126932
+DEBUG 2026-01-15 15:30:50,387 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\management\color.py first seen with mtime 1756806607.8923144
+DEBUG 2026-01-15 15:30:50,387 autoreload File C:\Python313\Lib\wsgiref\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,387 autoreload File C:\Python313\Lib\asyncio\trsock.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,387 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\proxy.py first seen with mtime 1756806607.9193294
+DEBUG 2026-01-15 15:30:50,387 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\http\response.py first seen with mtime 1756806607.9403396
+DEBUG 2026-01-15 15:30:50,387 autoreload File C:\Python313\Lib\urllib\error.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,387 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\__init__.py first seen with mtime 1756806607.9143295
+DEBUG 2026-01-15 15:30:50,387 autoreload File C:\Python313\Lib\email\mime\nonmultipart.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,387 autoreload File C:\Python313\Lib\queue.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,387 autoreload File C:\Python313\Lib\pathlib\__init__.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\servers\__init__.py first seen with mtime 1756806607.8993194
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\conf\global_settings.py first seen with mtime 1756806607.2170045
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\deletion.py first seen with mtime 1756806607.9153328
+DEBUG 2026-01-15 15:30:50,388 autoreload File C:\Python313\DLLs\_ssl.pyd first seen with mtime 1755178420.0
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\sql\subqueries.py first seen with mtime 1756806607.9228294
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\tuple_lookups.py first seen with mtime 1756806607.9203296
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\reverse_related.py first seen with mtime 1756806607.9203296
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\templatetags\admin_modify.py first seen with mtime 1756806607.4154246
+DEBUG 2026-01-15 15:30:50,388 autoreload File C:\Python313\Lib\email\header.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\apps\registry.py first seen with mtime 1756806607.2165072
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\indexes.py first seen with mtime 1756806607.9163296
+DEBUG 2026-01-15 15:30:50,388 autoreload File C:\Python313\Lib\encodings\utf_8.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,388 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\backends.py first seen with mtime 1756806607.4614532
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\fields\related.py first seen with mtime 1756806607.9193294
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\functions\json.py first seen with mtime 1756806607.9208293
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\urls\utils.py first seen with mtime 1756806607.9503503
+DEBUG 2026-01-15 15:30:50,389 autoreload File C:\Python313\Lib\asyncio\futures.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,389 autoreload File C:\Python313\Lib\email\generator.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\sqlite3\_functions.py first seen with mtime 1756806607.9093275
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\conf\urls\__init__.py first seen with mtime 1756806607.2960708
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\termcolors.py first seen with mtime 1756806607.9563549
+DEBUG 2026-01-15 15:30:50,389 autoreload File C:\Python313\Lib\email\contentmanager.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\mail\utils.py first seen with mtime 1756806607.8903108
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\models.py first seen with mtime 1756806607.7930803
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\sqlite3\operations.py first seen with mtime 1756806607.9103246
+DEBUG 2026-01-15 15:30:50,389 autoreload File C:\Python313\Lib\multiprocessing\process.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,389 autoreload File C:\Python313\Lib\dataclasses.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,389 autoreload File C:\Python313\DLLs\unicodedata.pyd first seen with mtime 1755178420.0
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\admin.py first seen with mtime 1764253541.608655
+DEBUG 2026-01-15 15:30:50,389 autoreload File C:\Python313\Lib\email\mime\base.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,389 autoreload File C:\Python313\Lib\pkgutil.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,389 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sites\requests.py first seen with mtime 1756806607.8367853
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\debug.py first seen with mtime 1756806607.9583547
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\middleware\csrf.py first seen with mtime 1756806607.9408395
+DEBUG 2026-01-15 15:30:50,390 autoreload File C:\Python313\DLLs\_uuid.pyd first seen with mtime 1755178418.0
+DEBUG 2026-01-15 15:30:50,390 autoreload File C:\Python313\Lib\encodings\cp1252.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\templatetags\i18n.py first seen with mtime 1756806607.94685
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\dateformat.py first seen with mtime 1756806607.9523501
+DEBUG 2026-01-15 15:30:50,390 autoreload File C:\Python313\DLLs\select.pyd first seen with mtime 1755178418.0
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\asgi.py first seen with mtime 1756806607.8893106
+DEBUG 2026-01-15 15:30:50,390 autoreload File C:\Python313\Lib\uuid.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\connection.py first seen with mtime 1756806607.95185
+DEBUG 2026-01-15 15:30:50,390 autoreload File C:\Python313\Lib\encodings\aliases.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\utils.py first seen with mtime 1756806607.9128244
+DEBUG 2026-01-15 15:30:50,390 autoreload File C:\Python313\Lib\multiprocessing\reduction.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\signing.py first seen with mtime 1756806607.8818066
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\checks\urls.py first seen with mtime 1756806607.8858109
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\validators.py first seen with mtime 1756806607.8818066
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\translation\reloader.py first seen with mtime 1756806607.957355
+DEBUG 2026-01-15 15:30:50,390 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\wsgi.py first seen with mtime 1756806607.8898108
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\files\locks.py first seen with mtime 1756806607.8873107
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\staticfiles\__init__.py first seen with mtime 1756806607.877806
+DEBUG 2026-01-15 15:30:50,391 autoreload File C:\Python313\Lib\urllib\response.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\cache\__init__.py first seen with mtime 1756806607.8823059
+DEBUG 2026-01-15 15:30:50,391 autoreload File C:\Python313\Lib\asyncio\exceptions.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\utils\datastructures.py first seen with mtime 1756806607.9523501
+DEBUG 2026-01-15 15:30:50,391 autoreload File C:\Python313\Lib\pprint.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\management\__init__.py first seen with mtime 1756806607.5099936
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\backends\base\__init__.py first seen with mtime 1756806607.9008193
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\defaults.py first seen with mtime 1756806607.9588575
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\admin.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\borrowers first seen with mtime 1764254001.453016
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\home_page.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\login.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,391 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\medias first seen with mtime 1764254001.4470198
+DEBUG 2026-01-15 15:30:50,392 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\staff_page.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,392 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\borrowers\ajoutemprunteur.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,392 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\borrowers\edit_emprunteur.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,392 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\borrowers\emprunteur_list.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,392 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\medias\ajoutmedia.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,392 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\medias\borrow_media.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,392 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\medias\editmedia.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:50,392 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\templates\medias\media_list.html first seen with mtime 1762443304.0
+DEBUG 2026-01-15 15:30:51,440 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\migrations\0001_initial.py first seen with mtime 1756806607.3823996
+DEBUG 2026-01-15 15:30:51,441 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py first seen with mtime 1756806607.5119934
+DEBUG 2026-01-15 15:30:51,441 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\migrations\__init__.py first seen with mtime 1756806607.3828993
+DEBUG 2026-01-15 15:30:51,441 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\migrations\0001_initial.py first seen with mtime 1764254706.8983989
+DEBUG 2026-01-15 15:30:51,441 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\loader.py first seen with mtime 1756806607.9118245
+DEBUG 2026-01-15 15:30:51,441 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\migrations\__init__.py first seen with mtime 1756806607.8346088
+DEBUG 2026-01-15 15:30:51,442 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0006_require_contenttypes_0002.py first seen with mtime 1756806607.5114944
+DEBUG 2026-01-15 15:30:51,442 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\management\commands\migrate.py first seen with mtime 1756806607.8948195
+DEBUG 2026-01-15 15:30:51,442 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\middleware\clickjacking.py first seen with mtime 1756806607.9403396
+DEBUG 2026-01-15 15:30:51,443 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\views\csrf.py first seen with mtime 1756806607.9583547
+DEBUG 2026-01-15 15:30:51,443 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0002_alter_permission_name_max_length.py first seen with mtime 1756806607.5104928
+DEBUG 2026-01-15 15:30:51,444 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py first seen with mtime 1756806607.5540292
+DEBUG 2026-01-15 15:30:51,444 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\core\management\sql.py first seen with mtime 1756806607.8923144
+DEBUG 2026-01-15 15:30:51,444 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1756806607.9223294
+DEBUG 2026-01-15 15:30:51,444 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\migrations\0001_initial.py first seen with mtime 1756806607.8341057
+DEBUG 2026-01-15 15:30:51,444 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1756806607.5545323
+DEBUG 2026-01-15 15:30:51,445 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1756806607.7950883
+DEBUG 2026-01-15 15:30:51,445 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0001_initial.py first seen with mtime 1756806607.5104928
+DEBUG 2026-01-15 15:30:51,445 autoreload File C:\Python313\Lib\encodings\idna.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:51,446 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\graph.py first seen with mtime 1756806607.9118245
+DEBUG 2026-01-15 15:30:51,446 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py first seen with mtime 1756806607.5109923
+DEBUG 2026-01-15 15:30:51,446 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1756806607.5109923
+DEBUG 2026-01-15 15:30:51,446 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_mediatheque\wsgi.py first seen with mtime 1764254449.9039063
+DEBUG 2026-01-15 15:30:51,446 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\migrations\0003_logentry_add_action_flag_choices.py first seen with mtime 1756806607.3828993
+DEBUG 2026-01-15 15:30:51,447 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1756806607.5109923
+DEBUG 2026-01-15 15:30:51,447 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_bibliothecaire\migrations\__init__.py first seen with mtime 1764254706.8968995
+DEBUG 2026-01-15 15:30:51,447 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\questioner.py first seen with mtime 1756806607.9123244
+DEBUG 2026-01-15 15:30:51,448 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\writer.py first seen with mtime 1756806607.9128244
+DEBUG 2026-01-15 15:30:51,448 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0010_alter_group_name_max_length.py first seen with mtime 1756806607.5119934
+DEBUG 2026-01-15 15:30:51,448 autoreload File C:\Python313\Lib\stringprep.py first seen with mtime 1755178382.0
+DEBUG 2026-01-15 15:30:51,448 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0009_alter_user_last_name_max_length.py first seen with mtime 1756806607.5119934
+DEBUG 2026-01-15 15:30:51,448 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\admin\migrations\0002_logentry_remove_auto_add.py first seen with mtime 1756806607.3828993
+DEBUG 2026-01-15 15:30:51,448 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\serializer.py first seen with mtime 1756806607.9128244
+DEBUG 2026-01-15 15:30:51,449 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\__init__.py first seen with mtime 1756806607.512494
+DEBUG 2026-01-15 15:30:51,449 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py first seen with mtime 1756806607.5540292
+DEBUG 2026-01-15 15:30:51,450 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\executor.py first seen with mtime 1756806607.9113245
+DEBUG 2026-01-15 15:30:51,450 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\db\migrations\recorder.py first seen with mtime 1756806607.9128244
+DEBUG 2026-01-15 15:30:51,450 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1756806607.512494
+DEBUG 2026-01-15 15:30:51,450 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py first seen with mtime 1756806607.5114944
+DEBUG 2026-01-15 15:30:51,450 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py first seen with mtime 1756806607.5119934
+DEBUG 2026-01-15 15:31:08,662 utils (0.000) SELECT "app_bibliothecaire_livre"."id", "app_bibliothecaire_livre"."name", "app_bibliothecaire_livre"."dateEmprunt", "app_bibliothecaire_livre"."dateRetour", "app_bibliothecaire_livre"."disponible", "app_bibliothecaire_livre"."emprunteur", "app_bibliothecaire_livre"."auteur" FROM "app_bibliothecaire_livre"; args=(); alias=default
+DEBUG 2026-01-15 15:31:08,662 utils (0.000) SELECT "app_bibliothecaire_dvd"."id", "app_bibliothecaire_dvd"."name", "app_bibliothecaire_dvd"."dateEmprunt", "app_bibliothecaire_dvd"."dateRetour", "app_bibliothecaire_dvd"."disponible", "app_bibliothecaire_dvd"."emprunteur", "app_bibliothecaire_dvd"."realisateur" FROM "app_bibliothecaire_dvd"; args=(); alias=default
+DEBUG 2026-01-15 15:31:08,663 utils (0.000) SELECT "app_bibliothecaire_cd"."id", "app_bibliothecaire_cd"."name", "app_bibliothecaire_cd"."dateEmprunt", "app_bibliothecaire_cd"."dateRetour", "app_bibliothecaire_cd"."disponible", "app_bibliothecaire_cd"."emprunteur", "app_bibliothecaire_cd"."artiste" FROM "app_bibliothecaire_cd"; args=(); alias=default
+DEBUG 2026-01-15 15:31:08,663 utils (0.000) SELECT "app_bibliothecaire_jeudeplateau"."id", "app_bibliothecaire_jeudeplateau"."name", "app_bibliothecaire_jeudeplateau"."createur", "app_bibliothecaire_jeudeplateau"."disponible" FROM "app_bibliothecaire_jeudeplateau"; args=(); alias=default
+INFO 2026-01-15 15:31:08,672 basehttp "GET / HTTP/1.1" 200 990
+DEBUG 2026-01-15 15:31:09,665 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\template\context_processors.py first seen with mtime 1756806607.9428425
+DEBUG 2026-01-15 15:31:09,666 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1756806607.7116933
+DEBUG 2026-01-15 15:31:09,668 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1756806607.7131934
+DEBUG 2026-01-15 15:31:09,670 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\conf\locale\en\formats.py first seen with mtime 1756806607.2330153
+DEBUG 2026-01-15 15:31:09,671 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1756806607.7126932
+DEBUG 2026-01-15 15:31:09,671 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\conf\locale\en\__init__.py first seen with mtime 1756806607.2330153
+DEBUG 2026-01-15 15:31:09,674 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1756806607.7131934
+DEBUG 2026-01-15 15:31:09,675 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1756806607.4624536
+DEBUG 2026-01-15 15:31:09,675 autoreload File D:\Programmation\mediatheque\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1756806607.7940838
+DEBUG 2026-01-15 15:31:15,061 base Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\urls\resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'app_membre.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_membre\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'app_bibliothecaire.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_bibliothecaire\\urls.py'> (None:None) 'staff/'>]], 'path': '.well-known/appspecific/com.chrome.devtools.json'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+DEBUG 2026-01-15 15:31:15,063 base Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\urls\resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'app_membre.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_membre\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'app_bibliothecaire.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_bibliothecaire\\urls.py'> (None:None) 'staff/'>]], 'path': '.well-known/appspecific/com.chrome.devtools.json'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'app_bibliothecaire.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_bibliothecaire\\urls.py'> (None:None) 'staff/'>
+WARNING 2026-01-15 15:31:15,065 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-15 15:31:15,066 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2723
+DEBUG 2026-01-15 15:31:15,781 autoreload File C:\Python313\Lib\encodings\unicode_escape.py first seen with mtime 1755178382.0
+INFO 2026-01-15 15:31:26,053 basehttp "GET /staff/login/ HTTP/1.1" 200 556
+DEBUG 2026-01-15 15:31:26,064 base Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\urls\resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'app_membre.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_membre\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'app_bibliothecaire.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_bibliothecaire\\urls.py'> (None:None) 'staff/'>]], 'path': '.well-known/appspecific/com.chrome.devtools.json'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+DEBUG 2026-01-15 15:31:26,065 base Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\urls\resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'app_membre.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_membre\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'app_bibliothecaire.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_bibliothecaire\\urls.py'> (None:None) 'staff/'>]], 'path': '.well-known/appspecific/com.chrome.devtools.json'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'app_bibliothecaire.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_bibliothecaire\\urls.py'> (None:None) 'staff/'>
+WARNING 2026-01-15 15:31:26,067 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-15 15:31:26,067 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2723
+DEBUG 2026-01-15 15:32:01,404 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'john' LIMIT 21; args=('john',); alias=default
+DEBUG 2026-01-15 15:32:01,631 utils (0.000) SELECT 1 AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'ict7cdzr4ki4gvcfnohfgvpphpmokh44' LIMIT 1; args=(1, 'ict7cdzr4ki4gvcfnohfgvpphpmokh44'); alias=default
+DEBUG 2026-01-15 15:32:01,631 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2026-01-15 15:32:01,664 utils (0.032) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('ict7cdzr4ki4gvcfnohfgvpphpmokh44', 'e30:1vgOOH:H3t5iBfev2_6zujJ0rkMUrpXb85bthN3lva2LMM9YkA', '2026-01-29 14:32:01.631826'); args=('ict7cdzr4ki4gvcfnohfgvpphpmokh44', 'e30:1vgOOH:H3t5iBfev2_6zujJ0rkMUrpXb85bthN3lva2LMM9YkA', '2026-01-29 14:32:01.631826'); alias=default
+DEBUG 2026-01-15 15:32:01,668 utils (0.004) COMMIT; args=None; alias=default
+DEBUG 2026-01-15 15:32:01,671 utils (0.003) UPDATE "auth_user" SET "last_login" = '2026-01-15 14:32:01.668380' WHERE "auth_user"."id" = 2; args=('2026-01-15 14:32:01.668380', 2); alias=default
+DEBUG 2026-01-15 15:32:01,671 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2026-01-15 15:32:01,672 utils (0.001) UPDATE "django_session" SET "session_data" = '.eJxVjDsOwjAQBe_iGlk26w-mpM8ZovV6FwdQIsVJhbg7spQC2jcz761G3Lc67o3XcSrqqs7q9LtlpCfPHZQHzvdF0zJv65R1V_RBmx6Wwq_b4f4dVGy110TZAiYhXyIABwtJHAfBkoUsBMhkPFyETYrWUHHoogQrJrGD7NXnCw3wOI4:1vgOOH:oYKsYL2vweTVv2pH37N4YmlLQ7t9jd7qtYLQUkPXbjo', "expire_date" = '2026-01-29 14:32:01.671930' WHERE "django_session"."session_key" = 'ict7cdzr4ki4gvcfnohfgvpphpmokh44'; args=('.eJxVjDsOwjAQBe_iGlk26w-mpM8ZovV6FwdQIsVJhbg7spQC2jcz761G3Lc67o3XcSrqqs7q9LtlpCfPHZQHzvdF0zJv65R1V_RBmx6Wwq_b4f4dVGy110TZAiYhXyIABwtJHAfBkoUsBMhkPFyETYrWUHHoogQrJrGD7NXnCw3wOI4:1vgOOH:oYKsYL2vweTVv2pH37N4YmlLQ7t9jd7qtYLQUkPXbjo', '2026-01-29 14:32:01.671930', 'ict7cdzr4ki4gvcfnohfgvpphpmokh44'); alias=default
+DEBUG 2026-01-15 15:32:01,675 utils (0.003) COMMIT; args=None; alias=default
+INFO 2026-01-15 15:32:01,676 basehttp "POST /staff/login/ HTTP/1.1" 302 0
+DEBUG 2026-01-15 15:32:01,679 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2026-01-15 14:32:01.678578' AND "django_session"."session_key" = 'ict7cdzr4ki4gvcfnohfgvpphpmokh44') LIMIT 21; args=('2026-01-15 14:32:01.678578', 'ict7cdzr4ki4gvcfnohfgvpphpmokh44'); alias=default
+DEBUG 2026-01-15 15:32:01,679 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2026-01-15 15:32:01,680 utils (0.000) SELECT "app_bibliothecaire_livre"."id", "app_bibliothecaire_livre"."name", "app_bibliothecaire_livre"."dateEmprunt", "app_bibliothecaire_livre"."dateRetour", "app_bibliothecaire_livre"."disponible", "app_bibliothecaire_livre"."emprunteur", "app_bibliothecaire_livre"."auteur" FROM "app_bibliothecaire_livre"; args=(); alias=default
+DEBUG 2026-01-15 15:32:01,680 utils (0.000) SELECT "app_bibliothecaire_dvd"."id", "app_bibliothecaire_dvd"."name", "app_bibliothecaire_dvd"."dateEmprunt", "app_bibliothecaire_dvd"."dateRetour", "app_bibliothecaire_dvd"."disponible", "app_bibliothecaire_dvd"."emprunteur", "app_bibliothecaire_dvd"."realisateur" FROM "app_bibliothecaire_dvd"; args=(); alias=default
+DEBUG 2026-01-15 15:32:01,680 utils (0.000) SELECT "app_bibliothecaire_cd"."id", "app_bibliothecaire_cd"."name", "app_bibliothecaire_cd"."dateEmprunt", "app_bibliothecaire_cd"."dateRetour", "app_bibliothecaire_cd"."disponible", "app_bibliothecaire_cd"."emprunteur", "app_bibliothecaire_cd"."artiste" FROM "app_bibliothecaire_cd"; args=(); alias=default
+DEBUG 2026-01-15 15:32:01,681 utils (0.000) SELECT "app_bibliothecaire_jeudeplateau"."id", "app_bibliothecaire_jeudeplateau"."name", "app_bibliothecaire_jeudeplateau"."createur", "app_bibliothecaire_jeudeplateau"."disponible" FROM "app_bibliothecaire_jeudeplateau"; args=(); alias=default
+DEBUG 2026-01-15 15:32:01,681 utils (0.000) SELECT "app_bibliothecaire_emprunteur"."id", "app_bibliothecaire_emprunteur"."name", "app_bibliothecaire_emprunteur"."firstname", "app_bibliothecaire_emprunteur"."email", "app_bibliothecaire_emprunteur"."bloque" FROM "app_bibliothecaire_emprunteur"; args=(); alias=default
+DEBUG 2026-01-15 15:32:01,682 utils (0.000) SELECT "app_bibliothecaire_emprunt"."id", "app_bibliothecaire_emprunt"."borrower_id", "app_bibliothecaire_emprunt"."media_type", "app_bibliothecaire_emprunt"."media_id", "app_bibliothecaire_emprunt"."date_emprunt", "app_bibliothecaire_emprunt"."date_retour", "app_bibliothecaire_emprunt"."returned" FROM "app_bibliothecaire_emprunt" WHERE ("app_bibliothecaire_emprunt"."media_id" = 1 AND "app_bibliothecaire_emprunt"."media_type" = 'livre' AND NOT "app_bibliothecaire_emprunt"."returned") ORDER BY "app_bibliothecaire_emprunt"."id" ASC LIMIT 1; args=(1, 'livre'); alias=default
+INFO 2026-01-15 15:32:01,684 basehttp "GET /staff/ HTTP/1.1" 200 2919
+DEBUG 2026-01-15 15:32:01,705 base Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\urls\resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'app_membre.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_membre\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'app_bibliothecaire.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_bibliothecaire\\urls.py'> (None:None) 'staff/'>]], 'path': '.well-known/appspecific/com.chrome.devtools.json'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+DEBUG 2026-01-15 15:32:01,706 base Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\urls\resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'app_membre.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_membre\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'app_bibliothecaire.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_bibliothecaire\\urls.py'> (None:None) 'staff/'>]], 'path': '.well-known/appspecific/com.chrome.devtools.json'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programmation\mediatheque\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'app_bibliothecaire.urls' from 'D:\\Programmation\\mediatheque\\mediatheque_project\\app_bibliothecaire\\urls.py'> (None:None) 'staff/'>
+WARNING 2026-01-15 15:32:01,708 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-15 15:32:01,708 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2723
+DEBUG 2026-01-15 15:35:39,454 autoreload File D:\Programmation\mediatheque\mediatheque_project\app_mediatheque\settings.py previous mtime: 1768487441.9222753, current mtime: 1768487738.57296
+DEBUG 2026-01-15 15:35:39,454 autoreload D:\Programmation\mediatheque\mediatheque_project\app_mediatheque\settings.py notified as changed. Signal results: [(<function template_changed at 0x00000220FCC04720>, None), (<function translation_file_changed at 0x00000220FE36A200>, None)].
+INFO 2026-01-15 15:35:39,454 autoreload D:\Programmation\mediatheque\mediatheque_project\app_mediatheque\settings.py changed, reloading.
+INFO 2026-01-15 15:47:13,976 views 'jeu' créé: 'test2' de 'test2auteur' (id='1') par l'utilisateur
+INFO 2026-01-15 15:50:19,932 views 'livre' créé: 'test4' de 'test4auteur' (id='3') par l'utilisateur
+INFO 2026-01-15 15:52:43,715 views 'dvd' créé: 'test5' de 'test5auteur' (id='2') par l'utilisateur
+INFO 2026-02-18 20:58:36,098 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 21:44:53,408 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 21:49:19,591 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 21:53:06,856 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 21:54:16,781 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 22:00:20,144 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 22:32:10,847 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 22:34:22,946 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 22:34:56,380 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 22:35:38,201 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 22:48:33,118 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 22:49:00,014 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 22:58:10,638 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:00:38,931 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:02:27,387 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:05:55,664 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:09:06,801 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:09:39,671 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:10:16,532 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:10:31,845 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:14:44,876 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:15:09,137 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:17:55,863 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:18:13,288 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:20:45,247 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:22:44,757 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:23:30,953 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:25:25,341 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:26:11,447 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:31:49,762 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:33:48,039 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:34:07,644 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:34:23,966 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:35:27,893 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-18 23:35:56,756 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:23:05,413 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:24:35,688 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:25:55,100 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:29:19,938 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:31:59,671 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:33:02,338 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:41:52,074 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:42:59,767 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:43:41,154 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:46:48,801 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 15:47:32,156 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-20 22:00:16,396 views 'livre' créé: 'livre1' de 'auteur1' (id='1') par l'utilisateur
+INFO 2026-02-23 21:18:17,737 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-23 21:21:02,907 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-23 21:25:32,846 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-23 21:26:14,345 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-23 22:48:14,210 views 'livre' créé: 'test' de 'testauteur' (id='2') par l'utilisateur
+INFO 2026-02-24 12:43:22,100 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-24 12:49:44,221 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-24 12:50:03,063 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-24 12:50:36,731 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-24 12:54:51,285 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-24 12:55:32,681 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-24 13:05:00,183 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-24 13:06:13,503 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-24 13:09:46,593 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-02-24 13:12:15,300 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur

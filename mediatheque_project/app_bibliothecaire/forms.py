@@ -1,7 +1,7 @@
 from django import forms
 from .models import Emprunteur
 
-MEDIA_CHOICES = [
+choixMedia = [
     ('livre', 'Livre'),
     ('dvd', 'DVD'),
     ('cd', 'CD'),
@@ -11,24 +11,24 @@ MEDIA_CHOICES = [
 class CreationMediaForm(forms.Form):
     nom = forms.CharField(label="Nom", required=True)
     createur = forms.CharField(label="Auteur / Créateur", required=True)
-    media_type = forms.ChoiceField(choices=MEDIA_CHOICES, label="Type de média")
+    typeMedia = forms.ChoiceField(choices=choixMedia, label="Type de média")
 
 class CreationEmprunteurForm(forms.ModelForm):
     class Meta:
         model = Emprunteur
-        fields = ['name', 'firstname', 'email']
+        fields = ['nom', 'prenom', 'email']
 
 class BorrowMediaForm(forms.Form):
-    borrower = forms.ModelChoiceField(
+    emprunteur = forms.ModelChoiceField(
         queryset=Emprunteur.objects.all(),
-        label="Emprunteur",
+        label="emprunteur",
         widget=forms.Select(attrs={"class": "searchable"})
     )
 
-    media_type = forms.ChoiceField(
-        choices=MEDIA_CHOICES,
+    typeMedia = forms.ChoiceField(
+        choices=choixMedia,
         label="Type de média",
-        widget=forms.Select(attrs={"id": "media_type"})
+        widget=forms.Select(attrs={"id": "typeMedia"})
     )
 
-    media_id = forms.IntegerField(widget=forms.HiddenInput())
+    idMedia = forms.IntegerField(widget=forms.HiddenInput())

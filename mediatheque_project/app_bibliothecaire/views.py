@@ -1,18 +1,23 @@
-from django.db.migrations.operations.base import Operation
 from  django.shortcuts import render, redirect, get_object_or_404
-from app_bibliothecaire.models import Livre, Dvd, Cd, JeuDePlateau, Emprunt, Emprunteur
+from django.utils.text import normalize_newlines
+
+from app_bibliothecaire.models import Livre, Dvd, Cd, JeuDePlateau, Emprunt
 from django.contrib import messages
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from app_bibliothecaire.forms import *
 from django.utils import timezone
 from django.db.utils import OperationalError
+import logging
 
 from django.http import JsonResponse
 from django.views.decorators.http import require_GET
 from django.db.models import Q
 
-MEDIA_MODELS = {
+
+logger = logging.getLogger('app_bibliothecaire')
+
+choixMedia = {
     'livre': Livre,
     'dvd': Dvd,
     'cd': Cd,
@@ -21,7 +26,7 @@ MEDIA_MODELS = {
 
 
 @login_required(login_url="staff/login/")
-def staff_page(request):
+def pageStaff(request):
     livres = list(Livre.objects.all())
     dvds = list(Dvd.objects.all())
     cds = list(Cd.objects.all())
@@ -29,16 +34,15 @@ def staff_page(request):
     emprunteurs = list(Emprunteur.objects.all())
 
     try:
-        for media_list, media_type in [(livres, 'livre'), (dvds, 'dvd'), (cds, 'cd')]:
-            for media in media_list:
-                media.current_emprunt = Emprunt.objects.filter(
-                    media_type=media_type,
-                    media_id=media.id,
-                    returned=False
+        for listeMedia, typeMedia in [(livres, 'livre'), (dvds, 'dvd'), (cds, 'cd')]:
+            for media in listeMedia:
+                media.empruntActuel = Emprunt.objects.filter(
+                    typeMedia=typeMedia,
+                    idMedia=media.id,
+                    mediaRendu=False
                 ).first()
-                if media.current_emprunt:
-                    # Calculate if the media is overdue
-                    media.current_emprunt.is_overdue = media.current_emprunt.date_retour < timezone.now()
+                if media.empruntActuel:
+                    media.empruntActuel.retard = media.empruntActuel.dateRetour< timezone.now()
     except OperationalError:
         pass
 
@@ -47,138 +51,141 @@ def staff_page(request):
         "dvds": dvds,
         "cds": cds,
         "jeux": jeux,
-        "livres_count": len(livres),
-        "dvds_count": len(dvds),
-        "cds_count": len(cds),
-        "jeux_count": len(jeux),
         "emprunteurs": emprunteurs,
+        "nombreLivre": len(livres),
+        "nombreDvd": len(dvds),
+        "nombreCd": len(cds),
+        "nombreJeu": len(jeux)
     }
 
-    return render(request, "staff_page.html", context)
+    return render(request, "pageStaff.html", context)
 
 @login_required(login_url="staff/login/")
-def delete_media(request, media_type, media_id):
-    model = MEDIA_MODELS.get(media_type)
+def supprimerMedia(request, typeMedia, idMedia):
+    model = choixMedia.get(typeMedia)
     if not model:
-        messages.error(request, "Invalid media type.")
-        return redirect('staff_page')
+        messages.error(request, "Type de média invalide.")
+        return redirect('pageStaff')
 
-    media = get_object_or_404(model, id=media_id)
+    media = get_object_or_404(model, id=idMedia)
     media.delete()
-    messages.success(request, f"{media_type.capitalize()} '{media.name}' bien supprimé !")
-    return redirect('staff_page')
+    messages.success(request, f"{typeMedia.capitalize()} '{media.nom}' bien supprimé !")
+    return redirect('pageStaff')
 
 @login_required(login_url="staff/login/")
-def ajoutmedia(request):
+def ajoutMedia(request):
     if request.method == 'POST':
         form = CreationMediaForm(request.POST)
         if form.is_valid():
             nom = form.cleaned_data['nom']
             createur = form.cleaned_data['createur']
-            media_type = form.cleaned_data['media_type']
+            typeMedia = form.cleaned_data['typeMedia']
 
-            if media_type == 'livre':
-                Livre.objects.create(name=nom, auteur=createur)
-            elif media_type == 'dvd':
-                Dvd.objects.create(name=nom, realisateur=createur)
-            elif media_type == 'cd':
-                Cd.objects.create(name=nom, artiste=createur)
-            elif media_type == 'jeu':
-                JeuDePlateau.objects.create(name=nom, createur=createur)
+            media = None
 
-            messages.success(request, f"{media_type.capitalize()} '{nom}' bien ajouté !")
-            return redirect('ajoutmedia')
+            if typeMedia == 'livre':
+                media = Livre.objects.create(nom=nom, auteur=createur)
+            elif typeMedia == 'dvd':
+                media = Dvd.objects.create(nom=nom, realisateur=createur)
+            elif typeMedia == 'cd':
+                media = Cd.objects.create(nom=nom, artiste=createur)
+            elif typeMedia == 'jeu':
+                media = JeuDePlateau.objects.create(nom=nom, createur=createur)
+
+            logger.info("'%s' créé: '%s' de '%s' (id='%s') par l'utilisateur", typeMedia, nom, createur, media.id)
+            return redirect('ajoutMedia')
     else:
         form = CreationMediaForm()
 
-    return render(request, 'medias/ajoutmedia.html', {'form': form})
+    return render(request, 'medias/ajoutMedia.html', {'form': form})
 
 
-def login_view(request):
+def pageLogin(request):
     if request.method == "POST":
         username = request.POST["username"]
         password = request.POST["password"]
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect("staff_page")  # redirect to user page
+            return redirect("pageStaff")
         else:
             messages.error(request, "Invalid username or password")
             return redirect("login")
     return render(request, "login.html")
 
+
 @login_required(login_url="staff/login/")
-def edit_media(request, media_type, media_id):
-    model = MEDIA_MODELS.get(media_type)
+def modifierMedia(request, typeMedia, idMedia):
+    model = choixMedia.get(typeMedia)
     if not model:
         messages.error(request, "Invalid media type.")
-        return redirect('staff_page')
+        return redirect('pageStaff')
 
-    media = get_object_or_404(model, id=media_id)
+    media = get_object_or_404(model, id=idMedia)
 
     if request.method == 'POST':
         form = CreationMediaForm(request.POST)
         if form.is_valid():
-            media.name = form.cleaned_data['nom']
+            media.nom = form.cleaned_data['nom']
             # Set creator field depending on media type
-            if media_type == 'livre':
+            if typeMedia == 'livre':
                 media.auteur = form.cleaned_data['createur']
-            elif media_type == 'dvd':
+            elif typeMedia == 'dvd':
                 media.realisateur = form.cleaned_data['createur']
-            elif media_type == 'cd':
+            elif typeMedia == 'cd':
                 media.artiste = form.cleaned_data['createur']
-            elif media_type == 'jeu':
+            elif typeMedia == 'jeu':
                 media.createur = form.cleaned_data['createur']
             media.save()
-            messages.success(request, f"{media_type.capitalize()} updated successfully!")
-            return redirect('staff_page')
+            messages.success(request, f"{typeMedia.capitalize()} updated successfully!")
+            return redirect('pageStaff')
     else:
         # Pre-fill form with existing values
         creator_field = getattr(media, 'auteur', None) or getattr(media, 'realisateur', None) \
                         or getattr(media, 'artiste', None) or getattr(media, 'createur', '')
         form = CreationMediaForm(initial={
-            'nom': media.name,
+            'nom': media.nom,
             'createur': creator_field,
-            'media_type': media_type
+            'typeMedia': typeMedia
         })
 
-    return render(request, 'medias/editmedia.html', {'form': form, 'media_type': media_type})
+    return render(request, 'medias/modifierMedia.html', {'form': form, 'typeMedia': typeMedia})
 
 @login_required(login_url="staff/login/")
-def ajout_emprunteur(request):
+def ajoutEmprunteur(request):
     if request.method == "POST":
         form = CreationEmprunteurForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, "Emprunteur créé avec succès !")
-            return redirect('ajoutemprunteur')
+            return redirect('ajoutEmprunteur')
 
     else:
         form = CreationEmprunteurForm()
 
-    return render(request, 'borrowers/ajoutemprunteur.html', {'form': form})
+    return render(request, 'emprunteurs/ajoutEmprunteur.html', {'form': form})
 
 
 @require_GET
-def search_media(request):
-    media_type = request.GET.get('media_type')
+def rechercheMedia(request):
+    typeMedia = request.GET.get('typeMedia')
     query = request.GET.get('q', '').strip()  # empty string if no input
 
-    model = MEDIA_MODELS.get(media_type)
+    model = choixMedia.get(typeMedia)
     if not model:
         return JsonResponse({'results': []})
 
     # If query is empty, return all available media
     if query:
         # Filter by existing fields per media type
-        filters = Q(name__icontains=query)
-        if media_type == 'livre':
+        filters = Q(nom__icontains=query)
+        if typeMedia == 'livre':
             filters |= Q(auteur__icontains=query)
-        elif media_type == 'dvd':
+        elif typeMedia == 'dvd':
             filters |= Q(realisateur__icontains=query)
-        elif media_type == 'cd':
+        elif typeMedia == 'cd':
             filters |= Q(artiste__icontains=query)
-        elif media_type == 'jeu':
+        elif typeMedia == 'jeu':
             filters |= Q(createur__icontains=query)
 
         results = model.objects.filter(disponible=True).filter(filters)
@@ -187,135 +194,130 @@ def search_media(request):
 
     data = [{
         'id': m.id,
-        'text': f"{m.name} ({getattr(m, 'auteur', '') or getattr(m, 'realisateur', '') or getattr(m, 'artiste', '') or getattr(m, 'createur', '')})"
+        'text': f"{m.nom} ({getattr(m, 'auteur', '') or getattr(m, 'realisateur', '') or getattr(m, 'artiste', '') or getattr(m, 'createur', '')})"
     } for m in results]
 
     return JsonResponse({'results': data})
 
 @require_GET
-def search_borrowers(request):
+def rechercheEmprunteur(request):
     query = request.GET.get('q', '')
 
-    borrowers = Emprunteur.objects.all()
+    emprunteurs = Emprunteur.objects.all()
     if query:
-        borrowers = borrowers.filter(name__icontains=query)
+        emprunteurs = emprunteurs.filter(nom__icontains=query)
 
-    data = [{'id': b.id, 'text': b.name} for b in borrowers]
+    data = [{'id': b.id, 'text': b.nom} for b in emprunteurs]
 
     return JsonResponse({'results': data})
 
 
 @login_required(login_url="staff/login/")
-def borrow_page(request):
-    error_message = None
+def pageEmprunt(request):
+    erreurMessage = None
 
     if request.method == 'POST':
         form = BorrowMediaForm(request.POST)
         if form.is_valid():
-            borrower = form.cleaned_data['borrower']
-            media_id = form.cleaned_data['media_id']
-            media_type = form.cleaned_data['media_type']
+            emprunteur = form.cleaned_data['emprunteur']
+            idMedia = form.cleaned_data['idMedia']
+            typeMedia = form.cleaned_data['typeMedia']
 
-            # Check if borrower can borrow
-            active_borrows = Emprunt.objects.filter(borrower=borrower, returned=False)
-            now = timezone.localtime(timezone.now())
-            overdue = active_borrows.filter(date_retour__lt=now).exists()
+            if not peutEmprunter(emprunteur):
+                messages.error(request, "L'emprunteur est bloqué.")
+                return redirect("pageEmprunt")
 
-            if overdue:
-                error_message = messages.error(request, f"{borrower.name} has overdue media and cannot borrow more.")
-                return redirect('borrow_page')
+            model = choixMedia.get(typeMedia)
+            media = get_object_or_404(model, id=idMedia)
 
-            if active_borrows.count() >= 3:
-                error_message = messages.error(request, f"{borrower.name} already has 3 borrowed media.")
-                return redirect('borrow_page')
-
-            model = MEDIA_MODELS.get(media_type)
-            media = get_object_or_404(model, id=media_id)
+            if typeMedia == 'jeu':
+                messages.error(request, 'Un jeu de plateau ne peut pas être emprunté.')
+                return redirect("pageEmprunt")
 
             if media.disponible:
-                # Create borrow record
                 Emprunt.objects.create(
-                    borrower=borrower,
-                    media_type=media_type,
-                    media_id=media.id,
-                    date_emprunt=now,
-                    date_retour=now + timezone.timedelta(days=7),  # example loan duration
-                    returned=False
+                    emprunteur=emprunteur,
+                    typeMedia=typeMedia,
+                    idMedia=idMedia,
+                    dateEmprunt=timezone.now(),
+                    dateRetour=timezone.now() + timezone.timedelta(days=7),  # example loan duration
+                    mediaRendu=False
                 )
                 media.disponible = False
                 media.save()
-                error_message = messages.success(request, f"{media.name} emprunté par {borrower.name} !")
+                messages.success(request, f"{media.nom} emprunté par {emprunteur.nom} !")
             else:
-                error_message = messages.error(request, "Ce média n'est pas disponible.")
+                messages.error(request, "Ce média n'est pas disponible.")
 
-            return redirect('borrow_page')
+            return redirect('pageEmprunt')
     else:
         form = BorrowMediaForm()
 
-    return render(request, 'medias/borrow_media.html', {'form': form, 'error_message': error_message})
+    return render(request, 'medias/empruntMedia.html', {'form': form, 'erreurMessage': erreurMessage})
 
 
-def can_borrow(borrower):
-    active_borrows = Emprunt.objects.filter(
-        emprunteur=borrower,
-        returned=False
+def peutEmprunter(emprunteur):
+    empruntActif = Emprunt.objects.filter(
+        emprunteur=emprunteur,
+        mediaRendu=False
     )
 
-    # Check if any is overdue
-    now = timezone.localtime(timezone.now())
-    overdue = active_borrows.filter(date_retour__lt=now).exists()
+    overdue =  empruntActif.filter(dateRetour__lt=timezone.now()).exists()
 
-    if overdue or active_borrows.count() >= 3:
+    if emprunteur.bloque:
+        return False
+
+    if overdue or  empruntActif.count() >= 3:
+        emprunteur.bloque = True
+        emprunteur.save(update_fields=['bloque'])
         return False
     return True
 
 @login_required(login_url="staff/login/")
-def return_media(request, media_type, media_id):
-    model = MEDIA_MODELS.get(media_type)
-    media = get_object_or_404(model, id=media_id)
+def retourMedia(request, typeMedia, idMedia):
+    model = choixMedia.get(typeMedia)
+    media = get_object_or_404(model, id=idMedia)
 
-    # Find the current active borrow (not yet returned)
     emprunt = Emprunt.objects.filter(
-        media_type=media_type,
-        media_id=media.id,
-        returned=False
+        typeMedia=typeMedia,
+        idMedia=media.id,
+        mediaRendu=False
     ).first()
 
     if emprunt:
-        emprunt.returned = True
-        emprunt.date_retour_effective = timezone.now()  # optional, if you want to track return date
+        emprunt.mediaRendu = True
         emprunt.save()
 
         media.disponible = True
         media.save()
 
-        messages.success(request, f"{media.name} a été rendu avec succès.")
+        messages.success(request, f"{media.nom} a été rendu avec succès.")
     else:
-        messages.warning(request, f"Aucun emprunt actif trouvé pour {media.name}.")
+        messages.warning(request, f"Aucun emprunt actif trouvé pour {media.nom}.")
 
-    return redirect('staff_page')
+    return redirect('pageStaff')
 
 @login_required(login_url="staff/login/")
-def edit_emprunteur(request, emprunteur_id):
-    emprunteur = get_object_or_404(Emprunteur, id=emprunteur_id)
+def modifierEmprunteur(request, idEmprunteur):
+    emprunteur = get_object_or_404(Emprunteur, id=idEmprunteur)
 
     if request.method == 'POST':
         form = CreationEmprunteurForm(request.POST, instance=emprunteur)
         if form.is_valid():
             form.save()
-            messages.success(request, f"L'emprunteur {emprunteur.name} a été modifié avec succès !")
-            return redirect('staff_page')
+            messages.success(request, f"L'emprunteur {emprunteur.nom} a été modifié avec succès !")
+            return redirect('pageStaff')
     else:
         form = CreationEmprunteurForm(instance=emprunteur)
 
-    return render(request, 'borrowers/edit_emprunteur.html', {
+    return render(request, 'emprunteurs/modifierEmprunteur.html', {
         'form': form,
         'emprunteur': emprunteur,
     })
 
 @login_required(login_url="staff/login/")
-def delete_emprunteur(request, emprunteur_id):
-    emprunteur = get_object_or_404(Emprunteur, id=emprunteur_id)
+def supprimerEmprunteur(request, idEmprunteur):
+    emprunteur = get_object_or_404(Emprunteur, id=idEmprunteur)
     emprunteur.delete()
-    messages.success(request, f"L'emprunteur {emprunteur.name} {emprunteur.firstname} a bien été supprimé !")
-    return redirect('staff_page')
+    messages.success(request, f"L'emprunteur {emprunteur.nom} {emprunteur.prenom} a bien été supprimé !")
+    return redirect('pageStaff')

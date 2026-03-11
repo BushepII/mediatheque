@@ -11,12 +11,12 @@ def test_ajoutmedia(client):
     data = {
         'nom' : 'testlivre',
         'createur': 'testauteurlivre',
-        'media_type':'livre'
+        'typeMedia':'livre'
     }
 
-    response = client.post(reverse('ajoutmedia'), data)
+    response = client.post(reverse('ajoutMedia'), data)
 
     assert response.status_code == 302
-    assert response.url == reverse('ajoutmedia')
+    assert response.url == reverse('ajoutMedia')
 
-    assert Livre.objects.filter(name='testlivre', auteur='testauteurlivre').exists()
+    assert Livre.objects.filter(nom='testlivre', auteur='testauteurlivre').exists()

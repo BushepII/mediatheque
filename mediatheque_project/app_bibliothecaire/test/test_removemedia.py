@@ -8,9 +8,9 @@ def test_removemedia(client):
     user = User.objects.create_user("test_user", "testuser@gmail.com", "userpassword")
     client.login(username='test_user', password='userpassword')
 
-    livre = Livre.objects.create(name='testlivre', auteur='auteurtest')
+    livre = Livre.objects.create(nom='testlivre', auteur='auteurtest')
 
-    response = client.post(reverse('delete_media', args=['livre', livre.id]))
+    response = client.post(reverse('supprimerMedia', args=['livre', livre.id]))
 
     assert response.status_code == 302
     assert not Livre.objects.filter(id=livre.id).exists()

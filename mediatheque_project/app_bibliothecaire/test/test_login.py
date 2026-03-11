@@ -10,7 +10,7 @@ def test_login(client):
     assert response.status_code == 302
     assert response.url != reverse('login')
 
-    #Test with wrong user
+    #Test avec mauvais mot de passe
     response = client.post(reverse('login'), {'username': 'test_user', 'password': 'wrongpassword'})
     assert response.status_code == 302
     assert response.url == reverse('login')
