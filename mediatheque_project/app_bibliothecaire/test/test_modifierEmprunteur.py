@@ -13,7 +13,7 @@ def test_modifierEmprunteur(client):
     response = client.post(reverse('modifierEmprunteur', args=[emprunteur.id]), {'nom':'testnom2', 'prenom':'testprenom2',
                                                                                         'email':'testuser2@gmail.com'})
 
-    assert response.status_code == 302
+    assert response.status_code == 200
 
     emprunteur.refresh_from_db()
     assert emprunteur.nom == 'testnom2'

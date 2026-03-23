@@ -18,7 +18,7 @@ def test_modifiermedia(client):
 
     response = client.post(reverse('modifierMedia', args=['livre', livre.id]), data)
 
-    assert response.status_code == 302
+    assert response.status_code == 200
 
     livre.refresh_from_db()
     assert livre.nom == 'testlivre2'

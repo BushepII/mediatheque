@@ -93,6 +93,7 @@ def ajoutMedia(request):
                 media = JeuDePlateau.objects.create(nom=nom, createur=createur)
 
             logger.info("'%s' créé: '%s' de '%s' (id='%s') par l'utilisateur", typeMedia, nom, createur, media.id)
+            messages.success(request, f"{typeMedia} '{nom}' créé avec succès !")
             return redirect('ajoutMedia')
     else:
         form = CreationMediaForm()
@@ -127,7 +128,6 @@ def modifierMedia(request, typeMedia, idMedia):
         form = CreationMediaForm(request.POST)
         if form.is_valid():
             media.nom = form.cleaned_data['nom']
-            # Set creator field depending on media type
             if typeMedia == 'livre':
                 media.auteur = form.cleaned_data['createur']
             elif typeMedia == 'dvd':
@@ -137,10 +137,9 @@ def modifierMedia(request, typeMedia, idMedia):
             elif typeMedia == 'jeu':
                 media.createur = form.cleaned_data['createur']
             media.save()
-            messages.success(request, f"{typeMedia.capitalize()} updated successfully!")
-            return redirect('pageStaff')
+            messages.success(request, f"Média bien modifié !")
+            return render(request, 'medias/modifierMedia.html', {'form': form, 'typeMedia': typeMedia})
     else:
-        # Pre-fill form with existing values
         creator_field = getattr(media, 'auteur', None) or getattr(media, 'realisateur', None) \
                         or getattr(media, 'artiste', None) or getattr(media, 'createur', '')
         form = CreationMediaForm(initial={
@@ -207,7 +206,7 @@ def rechercheEmprunteur(request):
     if query:
         emprunteurs = emprunteurs.filter(nom__icontains=query)
 
-    data = [{'id': b.id, 'text': b.nom} for b in emprunteurs]
+    data = [{'id': b.id, 'text': f"{b.nom} {b.prenom}"} for b in emprunteurs]
 
     return JsonResponse({'results': data})
 
@@ -245,7 +244,7 @@ def pageEmprunt(request):
                 )
                 media.disponible = False
                 media.save()
-                messages.success(request, f"{media.nom} emprunté par {emprunteur.nom} !")
+                messages.success(request, f"{media.nom} emprunté par {emprunteur.prenom} {emprunteur.nom} !")
             else:
                 messages.error(request, "Ce média n'est pas disponible.")
 
@@ -264,14 +263,14 @@ def peutEmprunter(emprunteur):
 
     overdue =  empruntActif.filter(dateRetour__lt=timezone.now()).exists()
 
-    if emprunteur.bloque:
-        return False
-
     if overdue or  empruntActif.count() >= 3:
         emprunteur.bloque = True
         emprunteur.save(update_fields=['bloque'])
         return False
-    return True
+    else:
+        emprunteur.bloque = False
+        emprunteur.save(update_fields=['bloque'])
+        return True
 
 @login_required(login_url="staff/login/")
 def retourMedia(request, typeMedia, idMedia):
@@ -305,8 +304,11 @@ def modifierEmprunteur(request, idEmprunteur):
         form = CreationEmprunteurForm(request.POST, instance=emprunteur)
         if form.is_valid():
             form.save()
-            messages.success(request, f"L'emprunteur {emprunteur.nom} a été modifié avec succès !")
-            return redirect('pageStaff')
+            messages.success(request, f"L'emprunteur {emprunteur.prenom} {emprunteur.nom} a été modifié avec succès !")
+            return render(request, 'emprunteurs/modifierEmprunteur.html', {
+                'form': form,
+                'emprunteur': emprunteur,
+            })
     else:
         form = CreationEmprunteurForm(instance=emprunteur)
 

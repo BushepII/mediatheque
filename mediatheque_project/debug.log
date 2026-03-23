@@ -1037,3 +1037,13 @@ INFO 2026-02-24 13:05:00,183 views 'livre' créé: 'testlivre' de 'testauteurlivre
 INFO 2026-02-24 13:06:13,503 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
 INFO 2026-02-24 13:09:46,593 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
 INFO 2026-02-24 13:12:15,300 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-03-12 00:52:21,312 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-03-23 14:38:07,016 views 'livre' créé: 'Livre1' de 'auteur1' (id='1') par l'utilisateur
+INFO 2026-03-23 14:38:22,586 views 'livre' créé: 'Livre2' de 'Auteur2' (id='2') par l'utilisateur
+INFO 2026-03-23 14:38:29,543 views 'livre' créé: 'Livre3' de 'Auteur3' (id='3') par l'utilisateur
+INFO 2026-03-23 14:38:42,477 views 'livre' créé: 'Livre4' de 'Auteur4' (id='4') par l'utilisateur
+INFO 2026-03-23 14:38:54,437 views 'dvd' créé: 'DVD1' de 'Createur1' (id='1') par l'utilisateur
+INFO 2026-03-23 14:39:04,332 views 'cd' créé: 'CD1' de 'Createur2' (id='1') par l'utilisateur
+INFO 2026-03-23 14:39:12,905 views 'jeu' créé: 'Jeu1' de 'Createur3' (id='1') par l'utilisateur
+INFO 2026-03-23 15:24:10,501 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
+INFO 2026-03-23 15:25:58,344 views 'livre' créé: 'testlivre' de 'testauteurlivre' (id='1') par l'utilisateur
