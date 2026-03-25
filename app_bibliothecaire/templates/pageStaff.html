@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if request.user.is_authenticated %}
+        <form method="post" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+
+        <nav>
+            <a href="{% url 'ajoutMedia' %}">
+                <button type="button">Ajouter un média</button>
+            </a>
+
+            <a href="{% url 'ajoutEmprunteur' %}">
+                <button type="button">Ajouter un emprunteur</button>
+            </a>
+
+            <a href="{% url 'pageEmprunt' %}">
+                <button type="button">Effectuer un emprunt</button>
+            </a>
+        </nav>
+    {% endif %}
+
+    {% include "medias/listeMedia.html" %}
+    {% include "emprunteurs/listeEmprunteur.html" %}
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page d'emprunt</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">
+            <button type="button">Accueil</button>
+        </a>
+        <a href="{% url 'pageStaff' %}">
+            <button type="button">Liste des médias et emprunteurs</button>
+        </a>
+    </nav>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="rechercheEmprunteur">Rechercher un emprunteur :</label>
+        <input type="text" id="rechercheEmprunteur" placeholder="Nom de l'emprunteur">
+        <br>
+        <select id="selectionEmprunteur" name="emprunteur" size="5" style="width:300px;"></select>
+        <br>
+        {{ form.typeMedia.label_tag }} {{ form.typeMedia }}
+        <br>
+        <label for="rechercheMedia">Recherche média :</label>
+        <input type="text" id="rechercheMedia" placeholder="Titre ou Auteur/Créateur">
+        <br>
+        <select id="selectionMedia" size="5" style="width:300px;"></select>
+        {{ form.idMedia }}
+        <br>
+        <button type="submit">Emprunter</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Recherche de l'emprunteur
+        function chargerEmprunteur(query='') {
+            $.ajax({
+                url: "{% url 'rechercheEmprunteur' %}",
+                data: { q: query },
+                success: function(data) {
+                    $('#selectionEmprunteur').empty();
+                    data.results.forEach(function(item) {
+                        $('#selectionEmprunteur').append(new Option(item.text, item.id));
+                    });
+                    // Selection du premier par défaut
+                    if ($('#selectionEmprunteur option').length > 0) {
+                        $('#selectionEmprunteur').val($('#selectionEmprunteur option:first').val());
+                        $('input[name="emprunteur"]').val($('#selectionEmprunteur').val());
+                    }
+                }
+            });
+        }
+
+        chargerEmprunteur();
+
+        // Actualise pendant que l'utilisateur écrit
+        $('#rechercheEmprunteur').on('input', function() {
+            chargerEmprunteur($(this).val());
+        });
+
+        // Actualisation  lorsque l'utilisateur change le mot de recherche
+        $('#selectionEmprunteur').on('change', function() {
+            $('input[name="emprunteur"]').val($(this).val());
+        });
+    });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+        function chargeMedia(query='') {
+            const typeMedia = $('#typeMedia').val();
+            $.ajax({
+                url: "{% url 'rechercheMedia' %}",
+                data: { q: query, typeMedia: typeMedia },
+                success: function(data) {
+                    $('#selectionMedia').empty();
+                    data.results.forEach(function(item) {
+                        $('#selectionMedia').append(new Option(item.text, item.id));
+                    });
+                    if ($('#selectionMedia option').length > 0) {
+                        $('#selectionMedia').val($('#selectionMedia option:first').val());
+                        $('input[name="idMedia"]').val($('#selectionMedia').val());
+                    }
+                }
+            });
+        }
+
+        chargeMedia();
+
+        $('#rechercheMedia').on('input', function() {
+            chargeMedia($(this).val());
+        });
+
+        $('#selectionMedia').on('change', function() {
+            $('input[name="idMedia"]').val($(this).val());
+        });
+
+        $('#typeMedia').on('change', function() {
+            chargeMedia();
+        });
+    });
+    </script>
+
+    {% if messages %}
+        <ul>
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+    {% endif %}
+</body>
